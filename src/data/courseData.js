@@ -92,13 +92,47 @@ What makes Roblox development special compared to other game engines like Unity 
               },
               {
                 type: "text",
-                content: "Smooth viewport navigation is essential. Here are the controls you'll use hundreds of times per session:"
+                content: "Smooth viewport navigation is essential. Professional developers navigate their viewport without even thinking about it — it becomes muscle memory. Here are the controls you'll use hundreds of times per session. Practice these until they feel natural:"
               },
               {
                 type: "code",
                 language: "text",
                 filename: "viewport_controls.txt",
                 code: "Camera Controls:\n• Right-Click + Drag    → Rotate/look around\n• Scroll Wheel          → Zoom in/out\n• Middle-Click + Drag   → Pan (move sideways/up/down)\n• W/A/S/D + Right-Click → Fly through the world (FPS style)\n• Shift + movement      → Move camera slower (precision)\n• F                     → Focus on selected object\n\nPro Camera Tips:\n• Press F to snap the camera to whatever you've selected\n• Use View → Camera Speed to adjust fly speed\n• Ctrl+Shift+F → Toggle fullscreen viewport\n• Double-click an object in Explorer to zoom to it"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Customizing Your Workspace"
+              },
+              {
+                type: "text",
+                content: "You can rearrange, resize, and dock panels to create a workspace that suits your workflow:"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "customize_workspace.txt",
+                code: "CUSTOMIZING YOUR LAYOUT:\n━━━━━━━━━━━━━━━━━━━━━━━\n\n1. MOVE PANELS:\n   • Click and drag any panel's title bar\n   • Dock to left, right, top, bottom, or center\n   • Or leave floating as a separate window\n\n2. RESIZE PANELS:\n   • Drag the borders between panels\n   • Make Explorer wider when working with complex hierarchies\n   • Make Output taller when debugging scripts\n\n3. TOGGLE PANELS (View tab):\n   Essential panels to enable:\n   ✅ Explorer — Object hierarchy\n   ✅ Properties — Object settings\n   ✅ Output — Print messages & errors\n   ✅ Command Bar — Quick Lua commands\n   ✅ Toolbox — Free assets library\n\n   Useful but optional:\n   ☐ Script Analysis — Shows warnings in your code\n   ☐ Selection Details — Info about selected objects\n   ☐ Asset Manager — Manage uploaded images/sounds\n   ☐ Terrain Editor — Build landscapes\n\n4. SAVE YOUR LAYOUT:\n   • Studio remembers your layout between sessions\n   • Set up once, use forever!\n\nRECOMMENDED BEGINNER LAYOUT:\n┌──────────┬─────────────────┬──────────┐\n│ Toolbox  │    Viewport     │ Explorer │\n│          │   (3D World)    │ ──────── │\n│          │                 │Properties│\n│          ├─────────────────┤          │\n│          │ Output/Command  │          │\n└──────────┴─────────────────┴──────────┘"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Using the Toolbox — Free Assets"
+              },
+              {
+                type: "text",
+                content: "The Toolbox is a massive library of free community-created assets. It's like an app store for game objects:"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "toolbox_guide.txt",
+                code: "USING THE TOOLBOX:\n━━━━━━━━━━━━━━━━━\n\n1. Open: View → Toolbox (usually on the left)\n2. Search for anything: 'tree', 'car', 'sword', 'music'\n3. Click an item to add it to your game\n\nCATEGORIES:\n• Models    → 3D objects (buildings, characters, vehicles)\n• Images    → Decals, textures, icons\n• Meshes    → 3D shapes (more detailed than basic parts)\n• Audio     → Music, sound effects\n• Plugins   → Studio extensions\n\n⚠️ TOOLBOX SAFETY RULES:\n• ALWAYS check models for hidden scripts!\n  Right-click → Expand tree → look for Scripts\n• Delete any script you don't understand\n• Some models contain malicious code that can:\n  - Spam players\n  - Teleport players away\n  - Insert more bad scripts\n• Trusted creators: Roblox, verified accounts\n\nSAFE WORKFLOW:\n1. Add the model to your game\n2. Expand it in Explorer\n3. Delete ALL scripts inside it\n4. Keep only the visual parts you need\n5. Group into a Model (Ctrl+G)"
+              },
+              {
+                type: "warning",
+                content: "Never blindly trust Toolbox models! Some contain hidden malicious scripts that can ruin your game. Always expand models in Explorer and delete any Script, LocalScript, or ModuleScript you didn't write yourself. Only keep the visual parts (Parts, MeshParts, Decals, etc.)."
               },
               {
                 type: "heading",
@@ -126,7 +160,7 @@ What makes Roblox development special compared to other game engines like Unity 
               },
               {
                 type: "text",
-                content: "The Explorer is the most important panel in Studio. It shows your game's hierarchy — every object, script, and asset organized in a tree:"
+                content: "The Explorer is the most important panel in Studio. It shows your game's hierarchy — every object, script, and asset organized in a tree structure. Think of it like a family tree for your game: everything is connected, and child objects are 'inside' their parent objects. When you move a Model in the viewport, all its children move with it. When you delete a parent, all children are deleted too."
               },
               {
                 type: "code",
@@ -137,6 +171,32 @@ What makes Roblox development special compared to other game engines like Unity 
               {
                 type: "tip",
                 content: "Press F5 to playtest your game instantly! Press Shift+F5 to stop the test. Press F8 to test with a simulated server and two clients — essential for testing multiplayer features. You'll use these shortcuts hundreds of times!"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Essential Keyboard Shortcuts"
+              },
+              {
+                type: "text",
+                content: "Memorize these shortcuts to work 10x faster in Studio:"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "keyboard_shortcuts.txt",
+                code: "GENERAL:\n━━━━━━━━\nCtrl+S          → Save project\nCtrl+Z          → Undo (use this A LOT!)\nCtrl+Y          → Redo\nCtrl+D          → Duplicate selected object\nDelete          → Delete selected object\nCtrl+G          → Group selected objects into Model\nCtrl+Shift+G    → Union selected parts\n\nTRANSFORM:\n━━━━━━━━━━\nCtrl+1          → Move tool\nCtrl+2          → Scale tool\nCtrl+3          → Rotate tool\nV               → Select tool\nF               → Focus camera on selection\n\nSCRIPTING:\n━━━━━━━━━━\nCtrl+/          → Comment/uncomment selected lines\nTab             → Indent code\nShift+Tab       → Remove indent\nCtrl+F          → Find text in script\nCtrl+H          → Find and replace\nCtrl+Shift+F    → Search ALL scripts\n\nTESTING:\n━━━━━━━━\nF5              → Play test (client)\nShift+F5        → Stop test\nF6              → Play test (server view)\nF8              → Test with server + 2 clients\nF9              → Open Developer Console (in-game)"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Studio Settings Worth Changing"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "studio_settings.txt",
+                code: "Go to File → Studio Settings:\n\n1. RENDERING:\n   • Quality Level: 21 (maximum for design work)\n   • EditQualityLevel: Full for best visuals\n\n2. SCRIPT EDITOR:\n   • Font: Source Code Pro or Fira Code\n   • Tab Width: 4 (industry standard)\n   • Script Editor Color Preset: Dark (easier on eyes)\n   • Show plus button on hover: ON\n\n3. PHYSICS:\n   • Simulation Radius: 10000 (see physics everywhere)\n\n4. STUDIO:\n   • Auto-Save Interval: 5 min (saves your work!)\n   • Show Diagnostics Bar: ON (see FPS & memory)\n\nThese small changes make a big difference in\nproductivity and comfort during long sessions!"
               },
               {
                 type: "heading",
@@ -289,6 +349,47 @@ Professional Roblox developers think of parts like LEGO bricks. Each individual 
                 ]
               },
               {
+                type: "heading",
+                level: 2,
+                content: "Working with Unions — Combining Parts"
+              },
+              {
+                type: "text",
+                content: "Unions let you combine, subtract, and intersect parts to create complex shapes that would be impossible with individual parts:"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "unions_guide.txt",
+                code: "UNION OPERATIONS (Model tab):\n\n1. UNION (Ctrl+Shift+G) — Combine parts into one shape\n   • Select 2+ parts → Model → Union\n   • Creates a single merged part\n   • Great for: complex buildings, curved shapes\n\n2. NEGATE — Subtract one shape from another\n   • Select the part to cut out\n   • Model → Negate (turns it red/transparent)\n   • Select the negated part AND the base part\n   • Model → Union\n   • The negated shape is cut out!\n   • Great for: doorways, windows, tunnels\n\n3. INTERSECT — Keep only where parts overlap\n   • Select 2+ overlapping parts\n   • Model → Intersect\n   • Only the overlapping area remains\n   • Great for: custom shapes, decorations\n\nEXAMPLE — Making a Window Hole:\n1. Place a wall (Block: 20 x 12 x 1)\n2. Place a smaller block where the window should be\n   (Block: 4 x 4 x 2, positioned inside the wall)\n3. Select the small block → Model → Negate\n4. Select BOTH parts → Model → Union\n5. Result: Wall with a rectangular hole!"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Physics & Constraints"
+              },
+              {
+                type: "text",
+                content: "Roblox has a powerful physics engine. Understanding when to use physics vs anchoring is key:"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "physics_basics.txt",
+                code: "WHEN TO ANCHOR vs UNANCHOR:\n\nANCHORED (✅ Anchored = true):\n• Walls, floors, roofs (static structures)\n• Decorations that shouldn't move\n• Platforms, checkpoints\n• Anything that stays in place\n\nUNANCHORED (❌ Anchored = false):\n• Balls, projectiles (things that fly/roll)\n• Destructible structures (knock them over!)\n• Physics puzzles (stacking, balancing)\n• Ragdoll effects\n\nUSEFUL PHYSICS PROPERTIES:\n• Density   → How heavy (affects momentum)\n• Friction  → How slippery (ice vs rubber)\n• Elasticity → How bouncy (0 = no bounce, 1 = super bouncy)\n\nSet these in Properties → CustomPhysicalProperties:\n  1. Check 'CustomPhysicalProperties'\n  2. Adjust Density, Friction, Elasticity\n\nCONSTRAINTS (connecting parts):\n• HingeConstraint   → Door hinges, rotating platforms\n• RopeConstraint    → Swinging ropes, chains\n• SpringConstraint  → Bouncy platforms, suspension\n• WeldConstraint    → Glue parts together permanently"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Terrain — Natural Landscapes"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "terrain_basics.txt",
+                code: "TERRAIN EDITOR (Home → Editor → Terrain Editor):\n\nTerrain lets you create natural landscapes:\n• Mountains, valleys, cliffs\n• Water (oceans, lakes, rivers)\n• Grass, sand, mud, snow surfaces\n\nTerrain Tools:\n━━━━━━━━━━━━\n• Generate → Auto-create a landscape from settings\n  - Size, Biome (Desert, Arctic, Grassland)\n  - Seed number for reproducible worlds\n\n• Sculpt → Shape terrain like clay\n  - Add     → Build up terrain\n  - Subtract → Dig/carve terrain\n  - Grow    → Raise terrain gently\n  - Erode   → Smooth/wear down terrain\n  - Smooth  → Remove rough edges\n  - Flatten → Make a flat area\n\n• Paint → Change terrain material\n  - Grass, Sand, Rock, Snow, Ice\n  - Mud, Ground, Slate, Limestone\n  - Water (creates actual water!)\n\n• Region → Select and modify large areas\n  - Copy/paste terrain sections\n  - Fill/delete terrain regions\n\nTIP: Start with Generate for a base, then use\nSculpt to refine, and Paint to add variety!"
+              },
+              {
                 type: "quiz",
                 question: "What happens if you forget to anchor a part?",
                 options: [
@@ -411,6 +512,32 @@ Don't worry if you've never coded before. Programming is just giving instruction
               {
                 type: "heading",
                 level: 2,
+                content: "Multiple Scripts Working Together"
+              },
+              {
+                type: "text",
+                content: "As your game grows, you'll have multiple scripts that need to work together. Understanding script execution order is key:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "multiple_scripts.lua",
+                code: "-- IMPORTANT: Each script runs INDEPENDENTLY!\n-- Scripts don't share variables with each other.\n\n-- Script A (inside Part1):\nlocal myVar = 10\nprint(\"Script A: \" .. myVar)  -- 10\n\n-- Script B (inside Part2):\n-- print(myVar)  -- ERROR! myVar doesn't exist here!\n-- Script B has NO access to Script A's variables\n\n-- To share data between scripts, use:\n-- 1. Value Objects (IntValue, StringValue, BoolValue)\nlocal scoreValue = Instance.new(\"IntValue\")\nscoreValue.Name = \"SharedScore\"\nscoreValue.Value = 0\nscoreValue.Parent = game.ReplicatedStorage\n\n-- Any script can now read/write:\nlocal score = game.ReplicatedStorage.SharedScore\nscore.Value = 100  -- Script A sets it\nprint(score.Value) -- Script B reads it: 100\n\n-- 2. Attributes (simpler)\ngame.ReplicatedStorage:SetAttribute(\"GameState\", \"Lobby\")\n-- Any script reads:\nlocal state = game.ReplicatedStorage:GetAttribute(\"GameState\")\n\n-- SCRIPT EXECUTION ORDER:\n-- All scripts start running at roughly the same time\n-- There's no guaranteed order!\n-- Use WaitForChild() to wait for objects other scripts create"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "The wait() Function In-Depth"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "wait_explained.lua",
+                code: "-- wait() pauses the script for a specified number of seconds\n\nwait(3)     -- Pause for 3 seconds\nwait(0.5)   -- Pause for half a second\nwait()      -- Pause for one frame (~1/60th of a second)\n\n-- wait() returns the actual time elapsed\nlocal elapsed = wait(2)\nprint(elapsed)  -- Might be 2.016 (slightly more than 2)\n\n-- IMPORTANT: wait() is not perfectly precise!\n-- wait(0.1) might actually wait 0.116 seconds\n-- For precise timing, use RunService events:\n\nlocal RunService = game:GetService(\"RunService\")\nlocal startTime = tick()\n\nRunService.Heartbeat:Connect(function(deltaTime)\n    -- deltaTime = exact time since last frame\n    -- Runs every frame (usually 60 times/second)\n    local elapsed = tick() - startTime\n    -- Use this for precise game timers\nend)\n\n-- task.wait() is the modern replacement (Luau)\ntask.wait(2)  -- Same as wait(2) but more accurate\n\n-- task.spawn() runs a function in a new 'thread'\ntask.spawn(function()\n    wait(5)\n    print(\"This runs after 5 seconds\")\nend)\nprint(\"This runs immediately — didn't wait!\")"
+              },
+              {
+                type: "heading",
+                level: 2,
                 content: "Common Color Names"
               },
               {
@@ -433,6 +560,51 @@ Don't worry if you've never coded before. Programming is just giving instruction
                   "**Exercise 4:** Create a 'disco floor' — a part that rapidly changes to random colors using BrickColor.Random().",
                   "**Exercise 5:** Write a script that changes a part's Material through 5 different materials, one per second."
                 ]
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Understanding CFrame — Position + Rotation"
+              },
+              {
+                type: "text",
+                content: "CFrame (Coordinate Frame) is one of the most powerful concepts in Roblox scripting. It represents both position AND rotation in a single value:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "cframe_basics.lua",
+                code: "local part = script.Parent\n\n-- CFrame includes position AND rotation\n-- Move a part to a specific position\npart.CFrame = CFrame.new(10, 5, 20)  -- X=10, Y=5, Z=20\n\n-- Rotate a part (using CFrame.Angles)\n-- Angles use RADIANS, not degrees!\n-- math.rad() converts degrees to radians\npart.CFrame = CFrame.new(0, 5, 0) * CFrame.Angles(\n    math.rad(0),    -- X rotation (pitch)\n    math.rad(45),   -- Y rotation (yaw) — 45 degrees\n    math.rad(0)     -- Z rotation (roll)\n)\n\n-- Move a part RELATIVE to its current position\npart.CFrame = part.CFrame * CFrame.new(0, 0, -5)\n-- Moves 5 studs FORWARD (relative to where it's facing)\n\n-- Smoothly rotate a part\nlocal part = script.Parent\nwhile true do\n    part.CFrame = part.CFrame * CFrame.Angles(0, math.rad(2), 0)\n    wait()  -- One frame\nend\n-- This spins the part 2 degrees per frame!"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Practical Project: Spinning Platform"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "spinning_platform.lua",
+                code: "-- Create a spinning platform players can ride\nlocal platform = script.Parent\nlocal SPIN_SPEED = 1  -- degrees per frame\nlocal BOB_SPEED = 0.02 -- bobbing speed\nlocal BOB_HEIGHT = 2  -- how high it bobs\nlocal startY = platform.Position.Y\nlocal time = 0\n\nwhile true do\n    time += BOB_SPEED\n    \n    -- Spin the platform\n    platform.CFrame = platform.CFrame * CFrame.Angles(0, math.rad(SPIN_SPEED), 0)\n    \n    -- Bob up and down using sine wave\n    local newY = startY + math.sin(time) * BOB_HEIGHT\n    platform.CFrame = CFrame.new(\n        platform.Position.X,\n        newY,\n        platform.Position.Z\n    ) * platform.CFrame.Rotation  -- Keep the rotation!\n    \n    wait()\nend"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Error Messages — Reading & Fixing Them"
+              },
+              {
+                type: "text",
+                content: "When your code has a bug, the Output shows an error message. Learning to read these is essential:"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "common_errors.txt",
+                code: "COMMON ERROR MESSAGES & HOW TO FIX THEM:\n\n1. \"attempt to index nil with 'Name'\"\n   Meaning: You tried to access .Name on something that's nil\n   Fix: Use FindFirstChild and check for nil before accessing\n   \n2. \"Expected ')' (to close '(' at line 5)\"\n   Meaning: You forgot a closing parenthesis\n   Fix: Count your opening and closing brackets\n   \n3. \"Expected 'end' (to close 'function' at line 3)\"\n   Meaning: You forgot an 'end' to close a function or if block\n   Fix: Every 'function', 'if', 'for', 'while' needs an 'end'\n\n4. \"attempt to perform arithmetic on a string value\"\n   Meaning: You tried to do math on text\n   Fix: Use tonumber() to convert: tonumber(\"42\") → 42\n\n5. \"ServerScriptService.Script:12: attempt to call a nil value\"\n   Meaning: Line 12 calls a function that doesn't exist\n   Fix: Check spelling, make sure function is defined BEFORE the call\n\nDEBUGGING TIPS:\n• Error messages always include the LINE NUMBER — check that line!\n• Use print() before and after suspicious code to narrow down bugs\n• Comment out sections of code to isolate the problem\n• The Output shows errors in RED — always check it!"
+              },
+              {
+                type: "tip",
+                content: "When you get an error, don't panic! Read the error message carefully — it tells you EXACTLY what went wrong and on which line. Add print() statements above and below the error line to see what values your variables actually have. 90% of bugs are found this way."
               },
               {
                 type: "checkpoint",
@@ -545,6 +717,47 @@ Every game you've ever played uses thousands of variables behind the scenes. Whe
                 ]
               },
               {
+                type: "heading",
+                level: 2,
+                content: "Roblox-Specific Data Types"
+              },
+              {
+                type: "text",
+                content: "Besides basic Lua types, Roblox adds special types for 3D game development. You'll use these constantly:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "roblox_types.lua",
+                code: "-- VECTOR3: A 3D point (X, Y, Z) — positions, sizes, velocities\nlocal position = Vector3.new(10, 5, 20)\nprint(position.X)  -- 10\nprint(position.Y)  -- 5\nprint(position.Z)  -- 20\n\n-- Vector3 math:\nlocal a = Vector3.new(1, 2, 3)\nlocal b = Vector3.new(4, 5, 6)\nprint(a + b)       -- (5, 7, 9)\nprint(a * 2)       -- (2, 4, 6)\nprint(a.Magnitude) -- Distance from origin (3.74...)\n\n-- COLOR3: Represents a color (RGB values 0-1)\nlocal red = Color3.new(1, 0, 0)          -- Red (0-1 scale)\nlocal blue = Color3.fromRGB(0, 0, 255)   -- Blue (0-255 scale)\nlocal purple = Color3.fromHSV(0.8, 1, 1) -- HSV color space\n\n-- CFRAME: Position + Rotation combined\nlocal cf = CFrame.new(10, 5, 20)  -- Position only\nlocal rotated = CFrame.Angles(0, math.rad(45), 0)  -- Rotation only\nlocal combined = CFrame.new(10, 5, 20) * CFrame.Angles(0, math.rad(45), 0)\n\n-- UDIM2: UI positioning (Scale, Offset for X and Y)\nlocal pos = UDim2.new(0.5, 0, 0.5, 0)  -- Center of screen\nlocal size = UDim2.new(0, 200, 0, 50)  -- 200px wide, 50px tall\n\n-- ENUM: Named constants for Roblox properties\nlocal material = Enum.Material.Neon\nlocal font = Enum.Font.GothamBold\nlocal keyCode = Enum.KeyCode.E"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Type Conversion — Converting Between Types"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "type_conversion.lua",
+                code: "-- Converting between types is common and important\n\n-- STRING → NUMBER\nlocal numStr = \"42\"\nlocal num = tonumber(numStr)\nprint(num + 8)  -- 50\n\n-- NUMBER → STRING\nlocal score = 100\nlocal scoreStr = tostring(score)\nprint(\"Score: \" .. scoreStr)  -- Score: 100\n\n-- Automatic conversion happens with ..\nprint(\"HP: \" .. 100)  -- Works! Number auto-converts to string\n\n-- But NOT with math operators!\n-- print(\"5\" + 3)  -- This actually WORKS in Lua! Returns 8\n-- Lua auto-converts strings to numbers for math\n-- But it's better to be explicit with tonumber()\n\n-- BOOLEAN → STRING\nlocal alive = true\nprint(tostring(alive))  -- \"true\"\n\n-- Checking types before conversion\nlocal input = \"hello\"\nlocal result = tonumber(input)\nif result then\n    print(\"Valid number: \" .. result)\nelse\n    print(\"Not a number!\")  -- This prints\nend"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Constants & Configuration Patterns"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "constants_pattern.lua",
+                code: "-- Use UPPER_CASE for values that shouldn't change\n-- Put them at the TOP of your script for easy editing\n\n-- Game configuration constants\nlocal MAX_HEALTH = 100\nlocal DEFAULT_WALK_SPEED = 16\nlocal JUMP_POWER = 50\nlocal RESPAWN_TIME = 5\nlocal COIN_VALUE = 10\nlocal MAX_INVENTORY_SLOTS = 20\n\n-- Enemy configuration\nlocal ENEMY_CONFIG = {\n    ZOMBIE = {\n        health = 50,\n        speed = 10,\n        damage = 15,\n        color = BrickColor.new(\"Camo\")\n    },\n    SKELETON = {\n        health = 30,\n        speed = 14,\n        damage = 10,\n        color = BrickColor.new(\"Institutional white\")\n    },\n    BOSS = {\n        health = 500,\n        speed = 8,\n        damage = 50,\n        color = BrickColor.new(\"Really red\")\n    },\n}\n\n-- Usage: change one value at the top to affect the entire game\nprint(\"Boss has \" .. ENEMY_CONFIG.BOSS.health .. \" HP\")\n-- Changing MAX_HEALTH from 100 to 150 updates everywhere\n-- MUCH better than finding every '100' in your code!"
+              },
+              {
+                type: "tip",
+                content: "Always put game configuration at the top of your scripts! This way, when you want to balance your game (adjust damage, health, speed, etc.), you only need to change one number instead of hunting through hundreds of lines of code. Pro developers call this 'data-driven design'."
+              },
+              {
                 type: "quiz",
                 question: "What does this print: local x = 5; x = x + 3; x *= 2; print(x)",
                 options: [
@@ -636,6 +849,21 @@ Every game mechanic you've ever experienced relies on if statements. The 'Game O
               {
                 type: "heading",
                 level: 2,
+                content: "Nested If Statements"
+              },
+              {
+                type: "text",
+                content: "You can put if statements inside other if statements for more complex logic:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "nested_if.lua",
+                code: "-- Nested if statements for complex game logic\nlocal isAlive = true\nlocal hasWeapon = true\nlocal ammo = 3\nlocal enemyDistance = 15\n\nif isAlive then\n    if hasWeapon then\n        if ammo > 0 then\n            if enemyDistance < 20 then\n                print(\"🎯 Fire! Enemy in range.\")\n                ammo -= 1\n            else\n                print(\"📏 Enemy too far away.\")\n            end\n        else\n            print(\"🔫 Out of ammo! Find more.\")\n        end\n    else\n        print(\"⚠️ Find a weapon first!\")\n    end\nelse\n    print(\"💀 You're defeated.\")\nend\n\n-- TIP: Deep nesting gets hard to read!\n-- Use 'guard clauses' (early returns) instead:\nlocal function tryAttack()\n    if not isAlive then print(\"💀 Defeated.\") return end\n    if not hasWeapon then print(\"⚠️ No weapon!\") return end\n    if ammo <= 0 then print(\"🔫 No ammo!\") return end\n    if enemyDistance >= 20 then print(\"📏 Too far!\") return end\n    \n    -- If we get here, ALL conditions are met!\n    print(\"🎯 Fire!\")\n    ammo -= 1\nend"
+              },
+              {
+                type: "heading",
+                level: 2,
                 content: "Practical Example: Game Power-Up System"
               },
               {
@@ -662,6 +890,36 @@ Every game mechanic you've ever experienced relies on if statements. The 'Game O
                   "**Exercise 4:** Build a part that changes color based on a random number: red (1-3), yellow (4-6), green (7-10).",
                   "**Exercise 5:** Create a time-of-day system: print different messages for morning (6-12), afternoon (12-18), evening (18-22), and night (22-6)."
                 ]
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Practical: Access Control System"
+              },
+              {
+                type: "text",
+                content: "Let's build a practical door system that checks multiple conditions before allowing entry:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "access_control.lua",
+                code: "-- Door access control system\n-- Put this script inside a door Part\n\nlocal door = script.Parent\nlocal REQUIRED_LEVEL = 5\nlocal REQUIRED_COINS = 100\nlocal VIP_NAMES = {\"Rathish\", \"Steve\", \"Alex\"}  -- VIP players\n\n-- Check if a name is in the VIP list\nlocal function isVIP(playerName)\n    for _, name in ipairs(VIP_NAMES) do\n        if name == playerName then\n            return true\n        end\n    end\n    return false\nend\n\nlocal debounce = false\n\ndoor.Touched:Connect(function(hit)\n    if debounce then return end\n    \n    local humanoid = hit.Parent:FindFirstChild(\"Humanoid\")\n    if not humanoid then return end\n    \n    local player = game.Players:GetPlayerFromCharacter(hit.Parent)\n    if not player then return end\n    \n    debounce = true\n    \n    local leaderstats = player:FindFirstChild(\"leaderstats\")\n    local coins = leaderstats and leaderstats:FindFirstChild(\"Coins\")\n    local stage = leaderstats and leaderstats:FindFirstChild(\"Stage\")\n    \n    -- VIP players always get in!\n    if isVIP(player.Name) then\n        print(\"⭐ VIP Access granted for \" .. player.Name)\n        door.Transparency = 0.8\n        door.CanCollide = false\n        wait(3)\n        door.Transparency = 0\n        door.CanCollide = true\n    \n    -- Check level AND coins for non-VIP\n    elseif stage and stage.Value >= REQUIRED_LEVEL \n       and coins and coins.Value >= REQUIRED_COINS then\n        print(\"✅ Access granted for \" .. player.Name)\n        door.Transparency = 0.8\n        door.CanCollide = false\n        wait(3)\n        door.Transparency = 0\n        door.CanCollide = true\n    \n    else\n        -- Access denied — figure out why\n        if stage and stage.Value < REQUIRED_LEVEL then\n            print(\"❌ \" .. player.Name .. \" needs Level \" .. REQUIRED_LEVEL)\n        end\n        if coins and coins.Value < REQUIRED_COINS then\n            print(\"❌ \" .. player.Name .. \" needs \" .. REQUIRED_COINS .. \" coins\")\n        end\n    end\n    \n    wait(1)\n    debounce = false\nend)"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Ternary-Style Expressions"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "ternary_style.lua",
+                code: "-- Lua doesn't have a true ternary operator (condition ? a : b)\n-- But you can use 'and/or' as a shorthand:\n\nlocal health = 30\n\n-- Long way:\nlocal status\nif health > 50 then\n    status = \"Healthy\"\nelse\n    status = \"Wounded\"\nend\n\n-- Short way (ternary-style):\nlocal status = health > 50 and \"Healthy\" or \"Wounded\"\nprint(status)  -- \"Wounded\"\n\n-- More examples:\nlocal isVIP = true\nlocal greeting = isVIP and \"Welcome, VIP!\" or \"Hello!\"\nprint(greeting)  -- \"Welcome, VIP!\"\n\nlocal coins = 0\nlocal message = coins > 0 and (coins .. \" coins\") or \"No coins yet\"\nprint(message)  -- \"No coins yet\"\n\n-- Useful for setting defaults:\nlocal playerName = nil\nlocal displayName = playerName or \"Unknown Player\"\nprint(displayName)  -- \"Unknown Player\""
+              },
+              {
+                type: "warning",
+                content: "The ternary-style `condition and valueIfTrue or valueIfFalse` has a gotcha: if valueIfTrue is false or nil, it returns valueIfFalse instead! For example, `true and false or \"fallback\"` returns \"fallback\" instead of false. Use regular if/else when the true value might be false or nil."
               },
               {
                 type: "checkpoint",
@@ -771,6 +1029,47 @@ Imagine you want to spawn 50 coins around your map. Without loops, you'd need 50
                 ]
               },
               {
+                type: "heading",
+                level: 2,
+                content: "Repeat-Until Loops"
+              },
+              {
+                type: "text",
+                content: "The repeat-until loop is the opposite of while: it runs the code first, THEN checks the condition. This guarantees the code runs at least once:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "repeat_until.lua",
+                code: "-- repeat-until: runs code, THEN checks the condition\n-- Loop continues until the condition is TRUE\n\n-- Roll dice until you get a 6\nlocal rolls = 0\nlocal result\n\nrepeat\n    result = math.random(1, 6)\n    rolls += 1\n    print(\"Roll \" .. rolls .. \": \" .. result)\nuntil result == 6  -- Stop when result IS 6\n\nprint(\"Got a 6 after \" .. rolls .. \" rolls!\")\n\n-- Difference from while:\n-- while: checks BEFORE running (might run 0 times)\n-- repeat: checks AFTER running (runs at least 1 time)\n\n-- Practical: Wait for a player's character to fully load\nlocal player = game.Players.LocalPlayer\nlocal character\n\nrepeat\n    character = player.Character\n    if not character then wait(0.1) end\nuntil character\nprint(\"Character loaded!\")"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Nested Loops — Loops Inside Loops"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "nested_loops.lua",
+                code: "-- Create a grid of parts (10x10)\nlocal GRID_SIZE = 10\nlocal SPACING = 4\n\nfor row = 1, GRID_SIZE do\n    for col = 1, GRID_SIZE do\n        local part = Instance.new(\"Part\")\n        part.Size = Vector3.new(3, 1, 3)\n        part.Position = Vector3.new(\n            col * SPACING,  -- X position\n            0.5,            -- Y (ground level)\n            row * SPACING   -- Z position\n        )\n        part.Anchored = true\n        \n        -- Checkerboard pattern!\n        if (row + col) % 2 == 0 then\n            part.BrickColor = BrickColor.new(\"White\")\n        else\n            part.BrickColor = BrickColor.new(\"Black\")\n        end\n        \n        part.Parent = workspace\n    end\nend\nprint(\"Created a \" .. GRID_SIZE .. \"x\" .. GRID_SIZE .. \" checkerboard!\")\n\n-- Create a spiral staircase!\nlocal STEPS = 30\nlocal RADIUS = 10\nlocal HEIGHT_PER_STEP = 1.5\nlocal ANGLE_PER_STEP = 15  -- degrees\n\nfor i = 1, STEPS do\n    local angle = math.rad(i * ANGLE_PER_STEP)\n    local step = Instance.new(\"Part\")\n    step.Size = Vector3.new(6, 1, 3)\n    step.Position = Vector3.new(\n        math.cos(angle) * RADIUS,\n        i * HEIGHT_PER_STEP,\n        math.sin(angle) * RADIUS\n    )\n    step.Orientation = Vector3.new(0, -i * ANGLE_PER_STEP, 0)\n    step.Anchored = true\n    step.Material = Enum.Material.Marble\n    step.BrickColor = BrickColor.new(\"White\")\n    step.Parent = workspace\nend\nprint(\"Spiral staircase complete!\")"
+              },
+              {
+                type: "tip",
+                content: "Nested loops are powerful but be careful with large numbers! A 100x100 grid creates 10,000 parts — which can lag. Keep your grid sizes reasonable. If you need large worlds, look into chunked loading."
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Loop Patterns — Common Recipes"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "loop_patterns.lua",
+                code: "-- PATTERN 1: Find the maximum value in a table\nlocal scores = {45, 82, 67, 93, 28, 55, 71}\nlocal maxScore = scores[1]\n\nfor _, score in ipairs(scores) do\n    if score > maxScore then\n        maxScore = score\n    end\nend\nprint(\"Highest score: \" .. maxScore)  -- 93\n\n-- PATTERN 2: Filter items from a list\nlocal allParts = workspace:GetChildren()\nlocal redParts = {}\n\nfor _, obj in ipairs(allParts) do\n    if obj:IsA(\"Part\") and obj.BrickColor == BrickColor.new(\"Bright red\") then\n        table.insert(redParts, obj)\n    end\nend\nprint(\"Found \" .. #redParts .. \" red parts\")\n\n-- PATTERN 3: Countdown with visual feedback\nlocal part = script.Parent\nfor i = 3, 1, -1 do\n    part.BrickColor = BrickColor.new(\"Bright yellow\")\n    wait(0.5)\n    part.BrickColor = BrickColor.new(\"White\")\n    wait(0.5)\nend\npart.BrickColor = BrickColor.new(\"Lime green\")  -- Go!\n\n-- PATTERN 4: Animate a value smoothly\nlocal startVal = 0\nlocal endVal = 100\nlocal steps = 50\n\nfor i = 0, steps do\n    local progress = i / steps  -- 0 to 1\n    local currentVal = startVal + (endVal - startVal) * progress\n    print(string.format(\"Progress: %.0f%%\", currentVal))\n    wait(0.05)\nend"
+              },
+              {
                 type: "quiz",
                 question: "What does 'for i = 1, 3 do print(i) end' print?",
                 options: [
@@ -851,6 +1150,32 @@ Functions are what separate messy beginner code from clean professional code. Ev
               {
                 type: "heading",
                 level: 2,
+                content: "Anonymous Functions & Callbacks"
+              },
+              {
+                type: "text",
+                content: "You've already used anonymous functions with events! Let's understand them formally:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "anonymous_functions.lua",
+                code: "-- NAMED function (has a name, stored in a variable)\nlocal function greet(name)\n    print(\"Hello, \" .. name)\nend\ngreet(\"Steve\")  -- Call by name\n\n-- ANONYMOUS function (no name, used inline)\n-- You've been using these with :Connect()!\npart.Touched:Connect(function(hit)\n    print(\"Touched by \" .. hit.Name)\nend)\n-- The function has no name — it's defined right where it's used\n\n-- Storing anonymous function in a variable (same as named!)\nlocal greet = function(name)\n    print(\"Hello, \" .. name)\nend\ngreet(\"Alex\")  -- Works exactly the same!\n\n-- Passing functions as arguments (callbacks)\nlocal function doAfterDelay(seconds, callback)\n    wait(seconds)\n    callback()  -- Call the function we were given\nend\n\ndoAfterDelay(3, function()\n    print(\"This runs after 3 seconds!\")\nend)\n\n-- Practical: Custom forEach function\nlocal function forEach(list, action)\n    for i, item in ipairs(list) do\n        action(item, i)\n    end\nend\n\nlocal items = {\"Sword\", \"Shield\", \"Potion\"}\nforEach(items, function(item, index)\n    print(index .. \". \" .. item)\nend)\n-- 1. Sword\n-- 2. Shield\n-- 3. Potion"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Practical: Part Factory Function"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "part_factory.lua",
+                code: "-- A function that creates configured parts — a 'factory'\nlocal function createPart(config)\n    config = config or {}  -- Default to empty table\n    \n    local part = Instance.new(\"Part\")\n    part.Name = config.name or \"Part\"\n    part.Size = config.size or Vector3.new(4, 4, 4)\n    part.Position = config.position or Vector3.new(0, 5, 0)\n    part.BrickColor = config.color or BrickColor.new(\"Medium stone grey\")\n    part.Material = config.material or Enum.Material.SmoothPlastic\n    part.Anchored = true\n    part.CanCollide = config.canCollide ~= false  -- Default true\n    part.Transparency = config.transparency or 0\n    part.Parent = config.parent or workspace\n    \n    -- Optional: add a light\n    if config.glow then\n        local light = Instance.new(\"PointLight\")\n        light.Color = part.Color\n        light.Range = config.glowRange or 10\n        light.Brightness = config.glowBrightness or 1\n        light.Parent = part\n    end\n    \n    return part\nend\n\n-- Usage: clean and readable!\nlocal wall = createPart({\n    name = \"Wall\",\n    size = Vector3.new(20, 12, 1),\n    position = Vector3.new(0, 6, 10),\n    color = BrickColor.new(\"Brick yellow\"),\n    material = Enum.Material.Brick,\n})\n\nlocal glowOrb = createPart({\n    name = \"GlowOrb\",\n    size = Vector3.new(2, 2, 2),\n    position = Vector3.new(5, 8, 5),\n    color = BrickColor.new(\"Cyan\"),\n    material = Enum.Material.Neon,\n    glow = true,\n    glowRange = 20,\n})"
+              },
+              {
+                type: "heading",
+                level: 2,
                 content: "Practice Exercises"
               },
               {
@@ -858,10 +1183,51 @@ Functions are what separate messy beginner code from clean professional code. Ev
                 items: [
                   "**Exercise 1:** Create a function `calculateScore(kills, coins, time)` that returns kills*100 + coins*10 - time*5.",
                   "**Exercise 2:** Write a `clamp(value, min, max)` function that ensures a value stays within a range.",
-                  "**Exercise 3:** Build a function that creates a colored part at a given position (parameters: color, size, position).",
+                  "**Exercise 3:** Build the createPart factory function from above and use it to create 5 different parts.",
                   "**Exercise 4:** Create a complete combat system with takeDamage(), heal(), and isAlive() functions.",
-                  "**Exercise 5:** Write a function that takes a table of numbers and returns the average."
+                  "**Exercise 5:** Write a function that takes a table of numbers and returns both the average AND the highest value (two return values)."
                 ]
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Scope — Where Variables Live"
+              },
+              {
+                type: "text",
+                content: "Understanding scope is crucial for writing bug-free code. A variable's scope determines where it can be accessed:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "scope_explained.lua",
+                code: "-- Global scope (DON'T do this unless necessary!)\nglobalVar = \"I'm accessible everywhere\"  -- No 'local' keyword\n\n-- Local to the script\nlocal scriptVar = \"I'm available throughout this script\"\n\nlocal function outerFunction()\n    local outerVar = \"I exist inside outerFunction\"\n    \n    local function innerFunction()\n        local innerVar = \"I exist inside innerFunction\"\n        \n        -- I CAN access outerVar and scriptVar from here\n        print(outerVar)    -- ✅ Works!\n        print(scriptVar)   -- ✅ Works!\n        print(innerVar)    -- ✅ Works!\n    end\n    \n    innerFunction()\n    \n    -- I CANNOT access innerVar here\n    print(outerVar)    -- ✅ Works!\n    -- print(innerVar)    -- ❌ ERROR! innerVar doesn't exist here\nend\n\nouterFunction()\n-- print(outerVar)  -- ❌ ERROR! outerVar doesn't exist here\n\n-- KEY RULE: Variables are accessible in their block\n-- and any INNER blocks, but NOT in outer blocks"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Tables as Organized Data"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "tables_intro.lua",
+                code: "-- Tables are Lua's most powerful data type\n-- They can act as arrays, dictionaries, or objects\n\n-- ARRAY-STYLE TABLE (numbered list)\nlocal inventory = {\"Sword\", \"Shield\", \"Potion\", \"Gold Key\"}\nprint(inventory[1])  -- Sword (Lua arrays start at 1, not 0!)\nprint(inventory[3])  -- Potion\nprint(#inventory)    -- 4 (# = length operator)\n\n-- Add items\ntable.insert(inventory, \"Bow\")       -- Adds to end\ntable.insert(inventory, 2, \"Armor\")  -- Insert at position 2\n\n-- Remove items\ntable.remove(inventory, 3)  -- Remove item at position 3\n\n-- DICTIONARY-STYLE TABLE (key-value pairs)\nlocal player = {\n    name = \"DragonSlayer\",\n    health = 100,\n    level = 15,\n    isVIP = true,\n}\n\nprint(player.name)     -- DragonSlayer\nprint(player.health)   -- 100\nprint(player[\"level\"]) -- 15 (alternative syntax)\n\n-- Add/modify entries\nplayer.mana = 50           -- Add new key\nplayer.health = 75         -- Modify existing\nplayer.title = \"The Brave\" -- Add another\n\n-- NESTED TABLES (tables inside tables)\nlocal team = {\n    {\n        name = \"Warrior\",\n        health = 200,\n        skills = {\"Slash\", \"Shield Bash\", \"War Cry\"}\n    },\n    {\n        name = \"Mage\",\n        health = 80,\n        skills = {\"Fireball\", \"Ice Shield\", \"Teleport\"}\n    },\n}\n\nprint(team[1].name)         -- Warrior\nprint(team[2].skills[1])    -- Fireball"
+              },
+              {
+                type: "warning",
+                content: "Lua arrays start at index 1, not 0! This is different from most programming languages. inventory[1] is the first item, inventory[2] is the second, and so on. Using inventory[0] typically returns nil."
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Practical: Item Database with Functions"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "item_database.lua",
+                code: "-- Building a real game system with functions and tables\n\nlocal ItemDatabase = {\n    [\"Wooden Sword\"] = {damage = 10, price = 25, level = 1},\n    [\"Iron Sword\"]   = {damage = 25, price = 100, level = 5},\n    [\"Gold Sword\"]   = {damage = 50, price = 500, level = 10},\n    [\"Diamond Sword\"]= {damage = 100, price = 2000, level = 20},\n}\n\nlocal function canAfford(playerCoins, itemName)\n    local item = ItemDatabase[itemName]\n    if not item then\n        return false, \"Item doesn't exist!\"\n    end\n    if playerCoins < item.price then\n        return false, \"Need \" .. (item.price - playerCoins) .. \" more coins\"\n    end\n    return true, \"Can afford!\"\nend\n\nlocal function canEquip(playerLevel, itemName)\n    local item = ItemDatabase[itemName]\n    if not item then return false end\n    return playerLevel >= item.level\nend\n\nlocal function getItemInfo(itemName)\n    local item = ItemDatabase[itemName]\n    if not item then\n        return \"Unknown item\"\n    end\n    return string.format(\n        \"%s — DMG: %d | Price: %d coins | Requires Level %d\",\n        itemName, item.damage, item.price, item.level\n    )\nend\n\n-- Usage:\nprint(getItemInfo(\"Iron Sword\"))\n-- Iron Sword — DMG: 25 | Price: 100 coins | Requires Level 5\n\nlocal ok, msg = canAfford(80, \"Iron Sword\")\nprint(ok, msg)  -- false, Need 20 more coins"
               },
               {
                 type: "checkpoint",
@@ -951,6 +1317,81 @@ To control anything in your game with code, you first need to **find it**. A scr
                   "**Exercise 4:** Write a function findPartByName(name) that searches the entire Workspace and returns the Part or nil.",
                   "**Exercise 5:** Practice with FindFirstChild — try finding an object that doesn't exist and handle the nil case gracefully."
                 ]
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "The :IsA() Method — Type Checking"
+              },
+              {
+                type: "text",
+                content: "IsA() checks if an object is a specific type (class). It also checks parent classes, making it very flexible:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "isa_method.lua",
+                code: "-- :IsA() checks the class of an object\nlocal part = Instance.new(\"Part\")\nprint(part:IsA(\"Part\"))       -- true\nprint(part:IsA(\"BasePart\"))   -- true (Part inherits from BasePart)\nprint(part:IsA(\"Instance\"))   -- true (everything is an Instance)\nprint(part:IsA(\"Model\"))      -- false\n\n-- Practical: Find all parts in Workspace (including MeshParts!)\nfor _, obj in ipairs(workspace:GetDescendants()) do\n    if obj:IsA(\"BasePart\") then\n        -- This catches: Part, MeshPart, WedgePart, etc.\n        print(obj.Name .. \" is a \" .. obj.ClassName)\n    end\nend\n\n-- Practical: Count scripts in the game\nlocal scriptCount = 0\nfor _, obj in ipairs(game:GetDescendants()) do\n    if obj:IsA(\"LuaSourceContainer\") then\n        -- Catches: Script, LocalScript, ModuleScript\n        scriptCount += 1\n    end\nend\nprint(\"Total scripts: \" .. scriptCount)\n\n-- Practical: Destroy all lights in workspace\nfor _, obj in ipairs(workspace:GetDescendants()) do\n    if obj:IsA(\"Light\") then  -- PointLight, SpotLight, SurfaceLight\n        obj:Destroy()\n    end\nend"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Attributes — Custom Properties"
+              },
+              {
+                type: "text",
+                content: "Attributes let you add custom data to any object — like custom properties you define yourself:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "attributes.lua",
+                code: "-- Set custom attributes on any object\nlocal part = workspace.Door\n\n-- Setting attributes\npart:SetAttribute(\"IsLocked\", true)\npart:SetAttribute(\"RequiredKey\", \"GoldKey\")\npart:SetAttribute(\"DamageAmount\", 25)\n\n-- Getting attributes\nlocal isLocked = part:GetAttribute(\"IsLocked\")\nlocal keyNeeded = part:GetAttribute(\"RequiredKey\")\nprint(\"Locked: \" .. tostring(isLocked))  -- Locked: true\nprint(\"Key: \" .. keyNeeded)              -- Key: GoldKey\n\n-- Listen for attribute changes\npart:GetAttributeChangedSignal(\"IsLocked\"):Connect(function()\n    local locked = part:GetAttribute(\"IsLocked\")\n    if locked then\n        part.BrickColor = BrickColor.new(\"Bright red\")\n    else\n        part.BrickColor = BrickColor.new(\"Bright green\")\n    end\nend)\n\n-- WHY USE ATTRIBUTES?\n-- • Set values in Studio Properties panel (no code needed!)\n-- • Easy for non-programmers to configure\n-- • Don't need Value objects (IntValue, StringValue)\n-- • Can be used on ANY instance"
+              },
+              {
+                type: "tip",
+                content: "Attributes are great for game designers! Instead of hardcoding values in scripts, set them as attributes on objects. Then anyone can adjust values in Studio's Properties panel without touching code. Set a 'CoinValue' attribute on each coin to control how much it's worth."
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Creating Objects with Code — Instance.new()"
+              },
+              {
+                type: "text",
+                content: "Sometimes you need to create objects at runtime rather than placing them in Studio. Instance.new() lets you create ANY Roblox object from code:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "instance_new.lua",
+                code: "-- Create a new Part entirely from code\nlocal newPart = Instance.new(\"Part\")\nnewPart.Name = \"CodePart\"\nnewPart.Size = Vector3.new(5, 5, 5)\nnewPart.Position = Vector3.new(0, 10, 0)\nnewPart.BrickColor = BrickColor.new(\"Bright red\")\nnewPart.Material = Enum.Material.Neon\nnewPart.Anchored = true\nnewPart.Parent = workspace  -- MUST set Parent to add it to the game!\n\n-- Create a PointLight inside the part\nlocal light = Instance.new(\"PointLight\")\nlight.Brightness = 2\nlight.Range = 15\nlight.Color = Color3.fromRGB(255, 100, 100)\nlight.Parent = newPart  -- Put light inside the part\n\n-- Create a whole trail of parts\nfor i = 1, 20 do\n    local trail = Instance.new(\"Part\")\n    trail.Name = \"TrailPart_\" .. i\n    trail.Size = Vector3.new(2, 2, 2)\n    trail.Position = Vector3.new(i * 4, 5, 0)\n    trail.Anchored = true\n    trail.BrickColor = BrickColor.Random()\n    trail.Material = Enum.Material.SmoothPlastic\n    trail.Parent = workspace\nend\nprint(\"Created 20 trail parts!\")"
+              },
+              {
+                type: "warning",
+                content: "Always set the Parent property LAST when using Instance.new()! Setting Parent first then changing properties causes unnecessary updates and can impact performance. Set all properties, THEN set Parent to add the object to the game."
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Cloning vs Creating — When to Use Each"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "clone_vs_create.lua",
+                code: "-- CLONE: Copy an existing object (preserves all properties + children)\nlocal template = game.ServerStorage:WaitForChild(\"CoinTemplate\")\n\nlocal function spawnCoin(position)\n    local coin = template:Clone()  -- Makes an exact copy\n    coin.Position = position\n    coin.Parent = workspace\n    return coin\nend\n\n-- Spawn 5 coins at random positions\nfor i = 1, 5 do\n    local pos = Vector3.new(\n        math.random(-50, 50),\n        5,\n        math.random(-50, 50)\n    )\n    spawnCoin(pos)\nend\n\n-- WHEN TO USE EACH:\n-- Instance.new() → Simple objects (Parts, Values, Lights)\n-- Clone()        → Complex objects (Models with scripts,\n--                   pre-configured parts with children)\n--\n-- Clone is faster for complex objects because it copies\n-- everything at once instead of building piece by piece"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Destroying Objects"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "destroying_objects.lua",
+                code: "-- Destroy() removes an object permanently\nlocal part = workspace:FindFirstChild(\"OldPart\")\nif part then\n    part:Destroy()  -- Gone forever! Cannot be recovered\nend\n\n-- Common pattern: destroy after a delay\nlocal effect = Instance.new(\"Part\")\neffect.Parent = workspace\n-- ... use the effect ...\ngame:GetService(\"Debris\"):AddItem(effect, 5)  -- Auto-destroy in 5 seconds\n\n-- Debris service is great for cleanup!\n-- It prevents memory leaks from forgotten temporary objects\nlocal Debris = game:GetService(\"Debris\")\n\nlocal function createExplosionEffect(position)\n    local parts = {}\n    for i = 1, 10 do\n        local p = Instance.new(\"Part\")\n        p.Size = Vector3.new(1, 1, 1)\n        p.Position = position + Vector3.new(\n            math.random(-3, 3), math.random(1, 5), math.random(-3, 3)\n        )\n        p.BrickColor = BrickColor.Random()\n        p.Parent = workspace\n        Debris:AddItem(p, 3)  -- Each piece auto-destroys in 3 seconds\n    end\nend"
               },
               {
                 type: "quiz",
@@ -1076,6 +1517,36 @@ Events are what make games interactive. Without events, your game would just sit
                 ]
               },
               {
+                type: "heading",
+                level: 2,
+                content: "Disconnecting Events"
+              },
+              {
+                type: "text",
+                content: "Sometimes you need to stop listening to an event. The Connect method returns a connection object you can use to disconnect:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "disconnect_events.lua",
+                code: "-- Store the connection in a variable\nlocal part = script.Parent\nlocal connection\n\nconnection = part.Touched:Connect(function(hit)\n    local humanoid = hit.Parent:FindFirstChild(\"Humanoid\")\n    if not humanoid then return end\n    \n    print(\"First touch! This only fires ONCE.\")\n    \n    -- Disconnect so it never fires again\n    connection:Disconnect()\n    \n    -- The event is now permanently disconnected\n    -- Great for one-time pickups, tutorial triggers, etc.\nend)\n\n-- Pattern: self-disconnecting timer\nlocal RunService = game:GetService(\"RunService\")\nlocal elapsed = 0\n\nlocal timerConnection\ntimerConnection = RunService.Heartbeat:Connect(function(dt)\n    elapsed += dt\n    \n    if elapsed >= 10 then\n        print(\"10 seconds passed! Timer stopped.\")\n        timerConnection:Disconnect()\n    end\nend)"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Advanced: Custom Events with BindableEvents"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "bindable_events.lua",
+                code: "-- BindableEvents let you create YOUR OWN events!\n-- Great for communication between scripts on the same side\n-- (server-to-server or client-to-client)\n\n-- Create a BindableEvent in ReplicatedStorage called 'GameOver'\nlocal gameOverEvent = game.ReplicatedStorage:WaitForChild(\"GameOver\")\n\n-- Script A: fires the event when game ends\nlocal function endGame(winnerName, score)\n    print(\"Game ending! Winner: \" .. winnerName)\n    gameOverEvent:Fire(winnerName, score)  -- Send data with the event\nend\n\n-- Script B: listens for the event\ngameOverEvent.Event:Connect(function(winnerName, score)\n    print(\"🏆 \" .. winnerName .. \" won with \" .. score .. \" points!\")\n    -- Show game over screen, play victory music, etc.\nend)\n\n-- Unlike RemoteEvents (client ↔ server),\n-- BindableEvents work on the SAME side only"
+              },
+              {
+                type: "tip",
+                content: "Use BindableEvents to keep your code organized! Instead of one massive script that handles everything, split your game into smaller scripts that communicate through events. For example: a CombatScript fires 'EnemyDefeated', and your RewardScript listens for it to give coins."
+              },
+              {
                 type: "checkpoint",
                 content: "Create a part with a ClickDetector that changes to a random color when clicked, but only allows clicking once per second using the debounce pattern. Display the total click count using print()."
               }
@@ -1099,7 +1570,9 @@ Events are what make games interactive. Without events, your game would just sit
                 type: "text",
                 content: `By the end of this lesson, you'll have a fully functional coin collection system with leaderstats (automatic Roblox leaderboard), sound effects, and respawning coins.
 
-Coin collection is one of the most fundamental game mechanics. You'll find it in Mario, Sonic, Roblox obbies, and thousands of other games. Building this system teaches you how to combine everything you've learned: parts, events, debounce, finding objects, and functions — all working together as a real game feature.`
+Coin collection is one of the most fundamental game mechanics. You'll find it in Mario, Sonic, Roblox obbies, and thousands of other games. Building this system teaches you how to combine everything you've learned: parts, events, debounce, finding objects, and functions — all working together as a real game feature.
+
+This is where things get exciting — you're building a REAL game system, not just practicing individual concepts. By the end of this lesson, you'll have a working game loop: players run around, collect coins, see their score increase on the leaderboard, and coins respawn for endless gameplay. This is the foundation of every collection-based game.`
               },
               {
                 type: "heading",
@@ -1173,6 +1646,36 @@ Coin collection is one of the most fundamental game mechanics. You'll find it in
                 ]
               },
               {
+                type: "heading",
+                level: 2,
+                content: "Multi-Tier Coin System"
+              },
+              {
+                type: "text",
+                content: "Professional games don't just have one type of coin. Let's build a multi-tier system with bronze, silver, and gold coins:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "multi_tier_coins.lua",
+                code: "-- Centralized multi-tier coin manager\n-- Put in ServerScriptService\n\nlocal Players = game:GetService(\"Players\")\n\n-- Coin tier configuration\nlocal COIN_TIERS = {\n    Bronze = {\n        value = 1,\n        color = BrickColor.new(\"Nougat\"),\n        material = Enum.Material.SmoothPlastic,\n        respawnTime = 5,\n        size = Vector3.new(1.5, 0.3, 1.5)\n    },\n    Silver = {\n        value = 5,\n        color = BrickColor.new(\"Medium stone grey\"),\n        material = Enum.Material.Metal,\n        respawnTime = 15,\n        size = Vector3.new(1.8, 0.35, 1.8)\n    },\n    Gold = {\n        value = 25,\n        color = BrickColor.new(\"Bright yellow\"),\n        material = Enum.Material.Neon,\n        respawnTime = 45,\n        size = Vector3.new(2, 0.4, 2)\n    },\n}\n\nlocal function setupCoin(coin)\n    -- Determine tier from coin name (e.g., 'GoldCoin', 'BronzeCoin')\n    local tierName = nil\n    for name, _ in pairs(COIN_TIERS) do\n        if string.find(coin.Name, name) then\n            tierName = name\n            break\n        end\n    end\n    \n    if not tierName then\n        tierName = \"Bronze\"  -- Default to bronze\n    end\n    \n    local tier = COIN_TIERS[tierName]\n    \n    -- Apply visual properties\n    coin.BrickColor = tier.color\n    coin.Material = tier.material\n    coin.Size = tier.size\n    coin.CanCollide = false\n    \n    local debounce = false\n    \n    coin.Touched:Connect(function(hit)\n        if debounce then return end\n        \n        local humanoid = hit.Parent:FindFirstChild(\"Humanoid\")\n        if not humanoid then return end\n        \n        local player = Players:GetPlayerFromCharacter(hit.Parent)\n        if not player then return end\n        \n        local leaderstats = player:FindFirstChild(\"leaderstats\")\n        if not leaderstats then return end\n        \n        debounce = true\n        \n        -- Check for double coins game pass\n        local multiplier = player:GetAttribute(\"DoubleCoins\") and 2 or 1\n        local earnedCoins = tier.value * multiplier\n        \n        leaderstats.Coins.Value += earnedCoins\n        print(player.Name .. \" collected \" .. tierName .. \" coin (+\" .. earnedCoins .. \")\")\n        \n        -- Hide coin\n        coin.Transparency = 1\n        coin.CanCollide = false\n        \n        -- Respawn based on tier\n        wait(tier.respawnTime)\n        coin.Transparency = 0\n        debounce = false\n    end)\nend\n\n-- Set up all coins in workspace\nfor _, obj in ipairs(workspace:GetDescendants()) do\n    if obj:IsA(\"Part\") and string.find(obj.Name, \"Coin\") then\n        setupCoin(obj)\n    end\nend\n\nprint(\"Multi-tier coin system loaded!\")"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Daily Reward System"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "daily_rewards.lua",
+                code: "-- Simple daily reward system (add to your data system)\n-- This encourages players to come back every day!\n\nlocal function checkDailyReward(player, savedData)\n    local now = os.time()  -- Current time in seconds\n    local lastLogin = savedData.LastLoginTime or 0\n    local dayStreak = savedData.LoginStreak or 0\n    \n    local ONE_DAY = 86400    -- 24 hours in seconds\n    local TWO_DAYS = 172800  -- 48 hours in seconds\n    local timeSinceLogin = now - lastLogin\n    \n    if timeSinceLogin >= ONE_DAY and timeSinceLogin < TWO_DAYS then\n        -- Logged in within 24-48 hours: increase streak!\n        dayStreak += 1\n        print(\"🔥 \" .. player.Name .. \" — Day \" .. dayStreak .. \" streak!\")\n    elseif timeSinceLogin >= TWO_DAYS then\n        -- Missed a day: reset streak\n        dayStreak = 1\n        print(\"📅 \" .. player.Name .. \" — Streak reset. Day 1!\")\n    else\n        -- Already logged in today\n        print(\"👋 \" .. player.Name .. \" — Welcome back!\")\n        return savedData  -- No reward for same-day login\n    end\n    \n    -- Calculate reward based on streak\n    local DAILY_REWARDS = {\n        [1] = 10,   -- Day 1: 10 coins\n        [2] = 15,   -- Day 2: 15 coins\n        [3] = 25,   -- Day 3: 25 coins\n        [4] = 35,   -- Day 4: 35 coins\n        [5] = 50,   -- Day 5: 50 coins\n        [6] = 75,   -- Day 6: 75 coins\n        [7] = 150,  -- Day 7: 150 coins (weekly bonus!)\n    }\n    \n    local dayIndex = math.min(dayStreak, 7)  -- Cap at day 7 rewards\n    local reward = DAILY_REWARDS[dayIndex]\n    \n    player.leaderstats.Coins.Value += reward\n    print(\"🎁 Daily reward: +\" .. reward .. \" coins!\")\n    \n    savedData.LastLoginTime = now\n    savedData.LoginStreak = dayStreak\n    return savedData\nend"
+              },
+              {
+                type: "tip",
+                content: "Daily reward systems are the #1 retention mechanic in free-to-play games. They give players a reason to come back every single day. The escalating rewards and streak bonus create a powerful 'don't want to lose my streak' motivation."
+              },
+              {
                 type: "checkpoint",
                 content: "Build the complete coin system: leaderstats in ServerScriptService, 5+ coins around your map with collection scripts, sound effects, and respawning. Test that the score increases on the leaderboard!"
               }
@@ -1190,7 +1693,9 @@ Coin collection is one of the most fundamental game mechanics. You'll find it in
                 type: "text",
                 content: `By the end of this lesson, you'll have a working obby with checkpoints that save progress, kill bricks, lava zones, moving traps, and spinning blades.
 
-Obbies (obstacle courses) are one of the most popular Roblox game genres — and for good reason. They combine level design, scripting, and game feel into a satisfying experience. The core loop is simple: jump, avoid hazards, reach checkpoints. But making it FEEL good requires understanding all the systems underneath.`
+Obbies (obstacle courses) are one of the most popular Roblox game genres — and for good reason. They combine level design, scripting, and game feel into a satisfying experience. The core loop is simple: jump, avoid hazards, reach checkpoints. But making it FEEL good requires understanding all the systems underneath.
+
+Games like Tower of Hell, Mega Easy Obby, and Escape Room have millions of visits because they nail the checkpoint-and-hazard formula. In this lesson, you'll learn to build every component of a professional obby, from the checkpoint save system to varied and interesting traps that keep players engaged.`
               },
               {
                 type: "heading",
@@ -1243,6 +1748,36 @@ Obbies (obstacle courses) are one of the most popular Roblox game genres — and
               {
                 type: "heading",
                 level: 2,
+                content: "Falling Block Trap"
+              },
+              {
+                type: "text",
+                content: "Blocks that fall from the ceiling are a classic trap mechanic:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "falling_blocks.lua",
+                code: "-- Falling blocks that respawn in the ceiling\n-- Put this in ServerScriptService\n\nlocal Debris = game:GetService(\"Debris\")\n\nlocal function createFallingBlock(spawnPosition)\n    local block = Instance.new(\"Part\")\n    block.Size = Vector3.new(\n        math.random(3, 6),\n        math.random(3, 6),\n        math.random(3, 6)\n    )\n    block.Position = spawnPosition + Vector3.new(\n        math.random(-10, 10), 0, math.random(-10, 10)\n    )\n    block.BrickColor = BrickColor.new(\"Dark stone grey\")\n    block.Material = Enum.Material.Slate\n    block.Anchored = false  -- Falls with gravity!\n    block.Parent = workspace\n    \n    -- Kill on impact\n    block.Touched:Connect(function(hit)\n        local humanoid = hit.Parent:FindFirstChild(\"Humanoid\")\n        if humanoid then\n            humanoid:TakeDamage(40)\n        end\n    end)\n    \n    -- Auto-cleanup after 8 seconds\n    Debris:AddItem(block, 8)\nend\n\n-- Spawn falling blocks periodically in a danger zone\nlocal dangerZone = workspace:WaitForChild(\"DangerZone\")  -- A part marking the area\nlocal spawnHeight = dangerZone.Position + Vector3.new(0, 40, 0)\n\nwhile true do\n    createFallingBlock(spawnHeight)\n    wait(math.random(1, 3))  -- Random interval between blocks\nend"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Laser Grid Trap"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "laser_grid.lua",
+                code: "-- Toggling laser beams — must time your movement!\n-- Create thin Neon parts as 'lasers'\n\nlocal laserFolder = workspace:WaitForChild(\"Lasers\")\nlocal TOGGLE_TIME = 2  -- seconds between on/off\nlocal isActive = true\n\n-- Kill on touch when active\nfor _, laser in ipairs(laserFolder:GetChildren()) do\n    laser.Touched:Connect(function(hit)\n        if not isActive then return end\n        local humanoid = hit.Parent:FindFirstChild(\"Humanoid\")\n        if humanoid then\n            humanoid.Health = 0\n        end\n    end)\nend\n\n-- Toggle lasers on and off\nwhile true do\n    wait(TOGGLE_TIME)\n    isActive = not isActive\n    \n    for _, laser in ipairs(laserFolder:GetChildren()) do\n        if isActive then\n            laser.Transparency = 0\n            laser.CanCollide = true\n            laser.BrickColor = BrickColor.new(\"Really red\")\n        else\n            laser.Transparency = 0.8\n            laser.CanCollide = false\n            laser.BrickColor = BrickColor.new(\"Dark stone grey\")\n        end\n    end\nend"
+              },
+              {
+                type: "warning",
+                content: "When building trap-heavy sections, always give players a visual warning before the trap activates. A red flash, a sound cue, or a brief animation tells the player 'danger is coming' and gives them a chance to react. Traps without warning feel unfair; traps with warning feel challenging."
+              },
+              {
+                type: "heading",
+                level: 2,
                 content: "Disappearing Platforms"
               },
               {
@@ -1265,6 +1800,36 @@ Obbies (obstacle courses) are one of the most popular Roblox game genres — and
                   "**Exercise 4:** Create a spinning blade obstacle using CFrame.Angles().",
                   "**Exercise 5:** Combine everything: build a complete obby stage with platforms, hazards, and a checkpoint at the end."
                 ]
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Conveyor Belt Trap"
+              },
+              {
+                type: "text",
+                content: "Conveyor belts push players toward hazards. They're a staple of difficult obbies:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "conveyor_belt.lua",
+                code: "-- Conveyor belt that pushes players in a direction\nlocal conveyor = script.Parent\nlocal PUSH_SPEED = 15  -- How fast it pushes\nlocal DIRECTION = Vector3.new(1, 0, 0)  -- Push to the right (+X)\n\n-- Set the visual velocity (the surface arrows)\nconveyor.AssemblyLinearVelocity = DIRECTION * PUSH_SPEED\n\n-- Alternative: Use BodyVelocity on touching players\nconveyor.Touched:Connect(function(hit)\n    local humanoid = hit.Parent:FindFirstChild(\"Humanoid\")\n    if not humanoid then return end\n    \n    local rootPart = hit.Parent:FindFirstChild(\"HumanoidRootPart\")\n    if not rootPart then return end\n    \n    -- Check if already has a conveyor force\n    if rootPart:FindFirstChild(\"ConveyorForce\") then return end\n    \n    local force = Instance.new(\"BodyVelocity\")\n    force.Name = \"ConveyorForce\"\n    force.Velocity = DIRECTION * PUSH_SPEED\n    force.MaxForce = Vector3.new(5000, 0, 5000)\n    force.Parent = rootPart\nend)\n\nconveyor.TouchEnded:Connect(function(hit)\n    local rootPart = hit.Parent and hit.Parent:FindFirstChild(\"HumanoidRootPart\")\n    if rootPart then\n        local force = rootPart:FindFirstChild(\"ConveyorForce\")\n        if force then force:Destroy() end\n    end\nend)"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Timed Challenge Doors"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "timed_door.lua",
+                code: "-- A door that opens briefly then closes — players must be fast!\nlocal TweenService = game:GetService(\"TweenService\")\nlocal door = script.Parent\nlocal button = workspace:WaitForChild(\"DoorButton\")  -- A separate part\n\nlocal OPEN_TIME = 3      -- Seconds the door stays open\nlocal isOpen = false\nlocal openPosition = door.Position + Vector3.new(0, 12, 0)  -- Move up\nlocal closedPosition = door.Position\n\nlocal function openDoor()\n    if isOpen then return end\n    isOpen = true\n    \n    -- Smooth open animation\n    local openTween = TweenService:Create(door, TweenInfo.new(0.5), {\n        Position = openPosition\n    })\n    openTween:Play()\n    openTween.Completed:Wait()\n    \n    -- Wait then close\n    wait(OPEN_TIME)\n    \n    -- Smooth close animation\n    local closeTween = TweenService:Create(door, TweenInfo.new(0.5), {\n        Position = closedPosition\n    })\n    closeTween:Play()\n    closeTween.Completed:Wait()\n    \n    isOpen = false\nend\n\n-- Open door when button is touched\nlocal clickDetector = button:FindFirstChildOfClass(\"ClickDetector\")\nif clickDetector then\n    clickDetector.MouseClick:Connect(openDoor)\nend"
+              },
+              {
+                type: "tip",
+                content: "Great obby design follows a difficulty curve: start easy to teach players the mechanics, then gradually increase difficulty. Place checkpoints AFTER hard sections (not before!) so players feel rewarded for completing challenges."
               },
               {
                 type: "quiz",
@@ -1357,6 +1922,32 @@ In Roblox, GUIs live in StarterGui and are cloned to each player when they join.
               {
                 type: "heading",
                 level: 2,
+                content: "Styling Tips — Making GUIs Look Professional"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "gui_styling.lua",
+                code: "-- Professional GUI styling techniques\n\nlocal frame = script.Parent\n\n-- 1. ROUNDED CORNERS (essential for modern look)\nlocal corner = Instance.new(\"UICorner\")\ncorner.CornerRadius = UDim.new(0, 8)  -- 8px radius\ncorner.Parent = frame\n\n-- 2. STROKE (border/outline)\nlocal stroke = Instance.new(\"UIStroke\")\nstroke.Color = Color3.fromRGB(100, 100, 200)\nstroke.Thickness = 2\nstroke.Transparency = 0.5\nstroke.Parent = frame\n\n-- 3. GRADIENT (fade between colors)\nlocal gradient = Instance.new(\"UIGradient\")\ngradient.Color = ColorSequence.new(\n    Color3.fromRGB(60, 60, 120),   -- Start color\n    Color3.fromRGB(30, 30, 60)     -- End color\n)\ngradient.Rotation = 90  -- Top to bottom\ngradient.Parent = frame\n\n-- 4. DROP SHADOW (using a duplicate frame behind)\nlocal shadow = Instance.new(\"Frame\")\nshadow.Size = UDim2.new(1, 4, 1, 4)\nshadow.Position = UDim2.new(0, 2, 0, 2)\nshadow.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\nshadow.BackgroundTransparency = 0.6\nshadow.ZIndex = frame.ZIndex - 1\nshadow.Parent = frame.Parent\nlocal shadowCorner = Instance.new(\"UICorner\")\nshadowCorner.CornerRadius = UDim.new(0, 10)\nshadowCorner.Parent = shadow\n\n-- 5. COMMON COLOR PALETTES FOR GAMES:\n-- Dark theme:  BG=#1a1a2e, Accent=#e94560, Text=#eee\n-- Sci-fi:      BG=#0a0a0a, Accent=#00ff88, Text=#ccc\n-- Fantasy:     BG=#2d1b00, Accent=#ffd700, Text=#f5f5dc\n-- Ocean:       BG=#001f3f, Accent=#7fdbff, Text=#fff"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Responsive Design — Different Screen Sizes"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "responsive_design.lua",
+                code: "-- Make GUIs look good on ALL screen sizes (PC, tablet, phone)\n\nlocal player = game.Players.LocalPlayer\nlocal screenSize = player.PlayerGui:WaitForChild(\"ScreenGui\").AbsoluteSize\n\n-- Check screen width to determine device type\nlocal function getDeviceType()\n    local width = screenSize.X\n    if width < 600 then\n        return \"Phone\"\n    elseif width < 1200 then\n        return \"Tablet\"\n    else\n        return \"PC\"\n    end\nend\n\nlocal device = getDeviceType()\nprint(\"Playing on: \" .. device)\n\n-- Adjust UI based on device\nlocal button = script.Parent\nif device == \"Phone\" then\n    button.Size = UDim2.new(0.8, 0, 0, 60)  -- Wider, taller for thumbs\n    button.TextSize = 22\nelseif device == \"Tablet\" then\n    button.Size = UDim2.new(0.5, 0, 0, 50)\n    button.TextSize = 20\nelse\n    button.Size = UDim2.new(0.3, 0, 0, 40)\n    button.TextSize = 18\nend\n\n-- PRO TIP: Use Scale (0-1) for sizes that should adapt\n-- to screen size, and Offset (pixels) for fixed-size elements.\n-- UDim2.new(0.3, 0, 0.1, 0) → 30% wide, 10% tall (responsive!)\n-- UDim2.new(0, 200, 0, 50) → always 200x50px (fixed)"
+              },
+              {
+                type: "warning",
+                content: "Always test your GUI on different screen sizes! In Studio, go to View → Device Emulation to preview how your game looks on phones, tablets, and different monitors. Many developers forget this and their phone players see broken UI."
+              },
+              {
+                type: "heading",
+                level: 2,
                 content: "Practice Exercises"
               },
               {
@@ -1366,8 +1957,42 @@ In Roblox, GUIs live in StarterGui and are cloned to each player when they join.
                   "**Exercise 2:** Build the coin counter HUD that updates when the player collects coins.",
                   "**Exercise 3:** Create a health bar using two frames (background + fill).",
                   "**Exercise 4:** Add a Stage display next to the coin counter.",
-                  "**Exercise 5:** Style your GUI with custom colors, fonts, and rounded corners (add UICorner)."
+                  "**Exercise 5:** Style your GUI with custom colors, fonts, rounded corners (UICorner), and a gradient (UIGradient)."
                 ]
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Creating GUIs Entirely from Code"
+              },
+              {
+                type: "text",
+                content: "While you can design GUIs in Studio's GUI editor, creating them from code gives you full control and makes them easier to replicate:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "gui_from_code.lua",
+                code: "-- LocalScript in StarterPlayerScripts\nlocal player = game.Players.LocalPlayer\nlocal playerGui = player:WaitForChild(\"PlayerGui\")\n\n-- Create the ScreenGui container\nlocal screenGui = Instance.new(\"ScreenGui\")\nscreenGui.Name = \"CustomHUD\"\nscreenGui.ResetOnSpawn = false  -- Don't destroy on death!\nscreenGui.Parent = playerGui\n\n-- Create a notification banner at the top\nlocal banner = Instance.new(\"Frame\")\nbanner.Name = \"NotificationBanner\"\nbanner.Size = UDim2.new(0.4, 0, 0, 40)\nbanner.Position = UDim2.new(0.3, 0, 0, -50)  -- Start off-screen\nbanner.AnchorPoint = Vector2.new(0, 0)\nbanner.BackgroundColor3 = Color3.fromRGB(30, 30, 30)\nbanner.BackgroundTransparency = 0.2\nbanner.BorderSizePixel = 0\nbanner.Parent = screenGui\n\n-- Add rounded corners\nlocal corner = Instance.new(\"UICorner\")\ncorner.CornerRadius = UDim.new(0, 8)\ncorner.Parent = banner\n\n-- Add text to the banner\nlocal bannerText = Instance.new(\"TextLabel\")\nbannerText.Name = \"BannerText\"\nbannerText.Size = UDim2.new(1, -20, 1, 0)\nbannerText.Position = UDim2.new(0, 10, 0, 0)\nbannerText.BackgroundTransparency = 1\nbannerText.TextColor3 = Color3.fromRGB(255, 255, 255)\nbannerText.Font = Enum.Font.GothamBold\nbannerText.TextSize = 16\nbannerText.Text = \"Welcome to the game!\"\nbannerText.Parent = banner\n\nprint(\"Custom HUD created from code!\")"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "UI Layout Constraints"
+              },
+              {
+                type: "text",
+                content: "Roblox provides powerful layout objects that automatically arrange children within a frame:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "ui_layouts.lua",
+                code: "-- UIListLayout: Arrange children in a list (vertical or horizontal)\nlocal frame = script.Parent\n\nlocal listLayout = Instance.new(\"UIListLayout\")\nlistLayout.FillDirection = Enum.FillDirection.Vertical  -- or Horizontal\nlistLayout.Padding = UDim.new(0, 5)       -- 5px between items\nlistLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center\nlistLayout.SortOrder = Enum.SortOrder.LayoutOrder\nlistLayout.Parent = frame\n\n-- Now any children added to the frame will auto-stack!\nfor i = 1, 5 do\n    local item = Instance.new(\"TextLabel\")\n    item.Name = \"Item\" .. i\n    item.Size = UDim2.new(1, 0, 0, 30)\n    item.Text = \"Menu Item \" .. i\n    item.LayoutOrder = i  -- Controls the order\n    item.Parent = frame   -- Automatically positioned!\nend\n\n-- UIGridLayout: Arrange in a grid\nlocal gridLayout = Instance.new(\"UIGridLayout\")\ngridLayout.CellSize = UDim2.new(0, 80, 0, 80)  -- Each cell 80x80\ngridLayout.CellPadding = UDim2.new(0, 5, 0, 5)  -- 5px gaps\ngridLayout.Parent = inventoryFrame\n\n-- UIPadding: Add inner spacing\nlocal padding = Instance.new(\"UIPadding\")\npadding.PaddingTop = UDim.new(0, 10)\npadding.PaddingBottom = UDim.new(0, 10)\npadding.PaddingLeft = UDim.new(0, 10)\npadding.PaddingRight = UDim.new(0, 10)\npadding.Parent = frame"
+              },
+              {
+                type: "tip",
+                content: "UIListLayout and UIGridLayout are game-changers for inventory systems, shop menus, and settings panels. Instead of manually positioning each item, the layout handles it automatically — even when you add or remove items dynamically!"
               },
               {
                 type: "quiz",
@@ -1461,6 +2086,47 @@ Buttons are how players interact with your game's UI. Every menu screen, shop in
                 ]
               },
               {
+                type: "heading",
+                level: 2,
+                content: "Inventory Grid UI"
+              },
+              {
+                type: "text",
+                content: "A grid-based inventory is essential for RPGs, survival games, and tycoons. Here's how to build one programmatically:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "inventory_grid.lua",
+                code: "-- LocalScript for an inventory grid system\nlocal player = game.Players.LocalPlayer\nlocal playerGui = player:WaitForChild(\"PlayerGui\")\n\n-- Create the inventory screen\nlocal screenGui = Instance.new(\"ScreenGui\")\nscreenGui.Name = \"InventoryUI\"\nscreenGui.Parent = playerGui\n\n-- Background panel\nlocal inventoryFrame = Instance.new(\"Frame\")\ninventoryFrame.Name = \"InventoryPanel\"\ninventoryFrame.Size = UDim2.new(0, 400, 0, 350)\ninventoryFrame.Position = UDim2.new(0.5, 0, 0.5, 0)\ninventoryFrame.AnchorPoint = Vector2.new(0.5, 0.5)\ninventoryFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 40)\ninventoryFrame.Visible = false  -- Start hidden\ninventoryFrame.Parent = screenGui\n\n-- Title\nlocal title = Instance.new(\"TextLabel\")\ntitle.Size = UDim2.new(1, 0, 0, 40)\ntitle.BackgroundColor3 = Color3.fromRGB(50, 50, 70)\ntitle.TextColor3 = Color3.fromRGB(255, 255, 255)\ntitle.Font = Enum.Font.GothamBold\ntitle.TextSize = 20\ntitle.Text = \"🎒 Inventory\"\ntitle.Parent = inventoryFrame\n\n-- Grid container\nlocal gridFrame = Instance.new(\"Frame\")\ngridFrame.Size = UDim2.new(1, -20, 1, -60)\ngridFrame.Position = UDim2.new(0, 10, 0, 50)\ngridFrame.BackgroundTransparency = 1\ngridFrame.Parent = inventoryFrame\n\n-- Add grid layout\nlocal gridLayout = Instance.new(\"UIGridLayout\")\ngridLayout.CellSize = UDim2.new(0, 70, 0, 70)\ngridLayout.CellPadding = UDim2.new(0, 8, 0, 8)\ngridLayout.Parent = gridFrame\n\n-- Create inventory slots\nfor i = 1, 20 do\n    local slot = Instance.new(\"TextButton\")\n    slot.Name = \"Slot_\" .. i\n    slot.BackgroundColor3 = Color3.fromRGB(60, 60, 80)\n    slot.TextColor3 = Color3.fromRGB(200, 200, 200)\n    slot.Font = Enum.Font.Gotham\n    slot.TextSize = 12\n    slot.Text = \"Empty\"\n    slot.Parent = gridFrame\n    \n    -- Add rounded corners\n    local corner = Instance.new(\"UICorner\")\n    corner.CornerRadius = UDim.new(0, 6)\n    corner.Parent = slot\n    \n    -- Click handler for each slot\n    slot.MouseButton1Click:Connect(function()\n        if slot.Text ~= \"Empty\" then\n            print(\"Selected: \" .. slot.Text)\n        end\n    end)\nend\n\n-- Toggle inventory with a keybind (E key)\nlocal UserInputService = game:GetService(\"UserInputService\")\nUserInputService.InputBegan:Connect(function(input, processed)\n    if processed then return end  -- Ignore if typing in chat\n    if input.KeyCode == Enum.KeyCode.E then\n        inventoryFrame.Visible = not inventoryFrame.Visible\n    end\nend)"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Popup Dialog System"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "dialog_system.lua",
+                code: "-- Reusable dialog popup with Yes/No buttons\nlocal TweenService = game:GetService(\"TweenService\")\n\nlocal function createDialog(parent, message, onYes, onNo)\n    -- Dark overlay\n    local overlay = Instance.new(\"Frame\")\n    overlay.Size = UDim2.new(1, 0, 1, 0)\n    overlay.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\n    overlay.BackgroundTransparency = 0.5\n    overlay.ZIndex = 100\n    overlay.Parent = parent\n    \n    -- Dialog box\n    local dialog = Instance.new(\"Frame\")\n    dialog.Size = UDim2.new(0, 300, 0, 150)\n    dialog.Position = UDim2.new(0.5, 0, 0.5, 0)\n    dialog.AnchorPoint = Vector2.new(0.5, 0.5)\n    dialog.BackgroundColor3 = Color3.fromRGB(40, 40, 55)\n    dialog.ZIndex = 101\n    dialog.Parent = overlay\n    \n    local corner = Instance.new(\"UICorner\")\n    corner.CornerRadius = UDim.new(0, 12)\n    corner.Parent = dialog\n    \n    -- Message text\n    local label = Instance.new(\"TextLabel\")\n    label.Size = UDim2.new(1, -20, 0, 80)\n    label.Position = UDim2.new(0, 10, 0, 10)\n    label.BackgroundTransparency = 1\n    label.TextColor3 = Color3.fromRGB(255, 255, 255)\n    label.Font = Enum.Font.Gotham\n    label.TextSize = 16\n    label.TextWrapped = true\n    label.Text = message\n    label.ZIndex = 102\n    label.Parent = dialog\n    \n    -- Yes button\n    local yesBtn = Instance.new(\"TextButton\")\n    yesBtn.Size = UDim2.new(0, 120, 0, 36)\n    yesBtn.Position = UDim2.new(0, 20, 1, -46)\n    yesBtn.BackgroundColor3 = Color3.fromRGB(0, 160, 0)\n    yesBtn.TextColor3 = Color3.fromRGB(255, 255, 255)\n    yesBtn.Font = Enum.Font.GothamBold\n    yesBtn.TextSize = 14\n    yesBtn.Text = \"✅ Yes\"\n    yesBtn.ZIndex = 102\n    yesBtn.Parent = dialog\n    \n    -- No button\n    local noBtn = Instance.new(\"TextButton\")\n    noBtn.Size = UDim2.new(0, 120, 0, 36)\n    noBtn.Position = UDim2.new(1, -140, 1, -46)\n    noBtn.BackgroundColor3 = Color3.fromRGB(160, 0, 0)\n    noBtn.TextColor3 = Color3.fromRGB(255, 255, 255)\n    noBtn.Font = Enum.Font.GothamBold\n    noBtn.TextSize = 14\n    noBtn.Text = \"❌ No\"\n    noBtn.ZIndex = 102\n    noBtn.Parent = dialog\n    \n    yesBtn.MouseButton1Click:Connect(function()\n        overlay:Destroy()\n        if onYes then onYes() end\n    end)\n    \n    noBtn.MouseButton1Click:Connect(function()\n        overlay:Destroy()\n        if onNo then onNo() end\n    end)\n    \n    return overlay\nend\n\n-- Usage:\n-- createDialog(screenGui, \"Buy Sword for 50 coins?\",\n--     function() print(\"Bought!\") end,\n--     function() print(\"Cancelled\") end\n-- )"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Cooldown Button (Visual Timer)"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "cooldown_button.lua",
+                code: "-- A button with a visual cooldown timer\nlocal TweenService = game:GetService(\"TweenService\")\nlocal button = script.Parent\nlocal COOLDOWN_TIME = 5  -- seconds\nlocal ready = true\n\nlocal originalText = \"⚡ Use Ability\"\nlocal originalColor = Color3.fromRGB(80, 80, 200)\n\nbutton.Text = originalText\nbutton.BackgroundColor3 = originalColor\n\nbutton.MouseButton1Click:Connect(function()\n    if not ready then return end\n    ready = false\n    \n    -- Activate the ability\n    print(\"Ability activated!\")\n    \n    -- Visual cooldown countdown\n    for i = COOLDOWN_TIME, 1, -1 do\n        button.Text = \"⏳ \" .. i .. \"s\"\n        button.BackgroundColor3 = Color3.fromRGB(100, 100, 100)\n        wait(1)\n    end\n    \n    -- Ready again!\n    button.Text = originalText\n    button.BackgroundColor3 = originalColor\n    ready = true\nend)"
+              },
+              {
+                type: "tip",
+                content: "When building complex UI systems, use ModuleScripts to create reusable UI components. Write functions like createButton(), createSlider(), createDropdown() once, then reuse them throughout your game. This saves enormous time!"
+              },
+              {
                 type: "checkpoint",
                 content: "Create a simple menu with a 'Play' button that hides the menu when clicked, and a 'Settings' button that toggles a settings panel. Add hover effects to both buttons!"
               }
@@ -1534,6 +2200,47 @@ Think of it like a restaurant: the server (kitchen) prepares the real food, and 
                 ]
               },
               {
+                type: "heading",
+                level: 2,
+                content: "RemoteFunctions — Request + Response"
+              },
+              {
+                type: "text",
+                content: "While RemoteEvents send one-way messages, RemoteFunctions let the client **ask** the server something and **wait for an answer**:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "remote_functions.lua",
+                code: "-- RemoteFunction lets client ask server and GET A RESPONSE\n-- Create a RemoteFunction in ReplicatedStorage called 'GetShopItems'\n\n-- SERVER (Script in ServerScriptService)\nlocal getShopItems = game.ReplicatedStorage:WaitForChild(\"GetShopItems\")\n\nlocal shopInventory = {\n    {name = \"Speed Boost\", cost = 50, description = \"2x speed for 30s\"},\n    {name = \"High Jump\", cost = 75, description = \"3x jump power for 30s\"},\n    {name = \"Shield\", cost = 100, description = \"Blocks next hit\"},\n}\n\ngetShopItems.OnServerInvoke = function(player)\n    -- Return shop data to the client\n    print(player.Name .. \" is browsing the shop\")\n    return shopInventory\nend\n\n-- CLIENT (LocalScript in StarterGui)\nlocal getShopItems = game.ReplicatedStorage:WaitForChild(\"GetShopItems\")\n\n-- This WAITS for the server to respond\nlocal items = getShopItems:InvokeServer()\n\n-- Now 'items' has the shop data!\nfor i, item in ipairs(items) do\n    print(item.name .. \" — \" .. item.cost .. \" coins\")\n    print(\"   \" .. item.description)\nend"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Security Best Practices"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "security_patterns.lua",
+                code: "-- ❌ BAD: Trusting client data\nremote.OnServerEvent:Connect(function(player, itemName, price)\n    -- A hacker could send price = 0!\n    player.leaderstats.Coins.Value -= price  -- WRONG!\nend)\n\n-- ✅ GOOD: Server validates everything\nlocal ITEM_PRICES = {\n    [\"Sword\"] = 50,\n    [\"Shield\"] = 75,\n    [\"Potion\"] = 25,\n}\n\nremote.OnServerEvent:Connect(function(player, itemName)\n    -- Look up the REAL price on the server\n    local realPrice = ITEM_PRICES[itemName]\n    \n    -- Validate the item exists\n    if not realPrice then\n        warn(player.Name .. \" requested invalid item: \" .. tostring(itemName))\n        return\n    end\n    \n    -- Validate player can afford it\n    local coins = player.leaderstats.Coins\n    if coins.Value < realPrice then\n        warn(player.Name .. \" can't afford \" .. itemName)\n        return\n    end\n    \n    -- All checks passed — process the purchase\n    coins.Value -= realPrice\n    print(\"✅ \" .. player.Name .. \" bought \" .. itemName .. \" for \" .. realPrice)\n    -- Give the item...\nend)\n\n-- ✅ GOOD: Rate limiting to prevent spam\nlocal lastFireTime = {}\nlocal COOLDOWN = 1  -- 1 second between requests\n\nremote.OnServerEvent:Connect(function(player, ...)\n    local now = tick()\n    local lastTime = lastFireTime[player.UserId] or 0\n    \n    if now - lastTime < COOLDOWN then\n        warn(player.Name .. \" is firing too fast! Ignoring.\")\n        return\n    end\n    \n    lastFireTime[player.UserId] = now\n    -- Process the request...\nend)"
+              },
+              {
+                type: "warning",
+                content: "NEVER use RemoteFunction's OnClientInvoke (server calling client and waiting for a response). A malicious client could stall or crash the server by never responding. Only use OnServerInvoke (client asks server) which is safe."
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Complete Multiplayer Example: Team Chat"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "team_notification.lua",
+                code: "-- Server-side team notification system\n-- Put in ServerScriptService\n\nlocal Players = game:GetService(\"Players\")\nlocal announceRemote = game.ReplicatedStorage:WaitForChild(\"Announce\")\n\n-- Send announcement to all players\nlocal function announceToAll(message, color)\n    color = color or Color3.fromRGB(255, 255, 255)\n    announceRemote:FireAllClients(message, color)\nend\n\n-- Announce when players join/leave\nPlayers.PlayerAdded:Connect(function(player)\n    announceToAll(\n        \"👋 \" .. player.Name .. \" joined the game!\",\n        Color3.fromRGB(100, 255, 100)  -- Green\n    )\nend)\n\nPlayers.PlayerRemoving:Connect(function(player)\n    announceToAll(\n        \"👋 \" .. player.Name .. \" left the game.\",\n        Color3.fromRGB(255, 100, 100)  -- Red\n    )\nend)\n\n-- Client-side: show the announcement\n-- LocalScript in StarterGui\nlocal announceRemote = game.ReplicatedStorage:WaitForChild(\"Announce\")\nlocal label = script.Parent  -- A TextLabel\n\nannounceRemote.OnClientEvent:Connect(function(message, color)\n    label.Text = message\n    label.TextColor3 = color\n    label.Visible = true\n    \n    wait(4)\n    label.Visible = false\nend)"
+              },
+              {
                 type: "quiz",
                 question: "Why should game logic (like giving items) be on the server?",
                 options: [
@@ -1559,7 +2266,24 @@ Think of it like a restaurant: the server (kitchen) prepares the real food, and 
                 type: "text",
                 content: `By the end of this lesson, you'll implement a complete data saving system using DataStoreService with proper error handling, so player progress persists between sessions.
 
-Without data saving, all progress is lost when a player leaves. They'd have to re-collect every coin, re-complete every checkpoint, every single time they play. **DataStoreService** solves this by saving data to Roblox's cloud servers. When a player returns, their data is loaded and restored.`
+Without data saving, all progress is lost when a player leaves. They'd have to re-collect every coin, re-complete every checkpoint, every single time they play. **DataStoreService** solves this by saving data to Roblox's cloud servers. When a player returns, their data is loaded and restored.
+
+Data persistence is what makes a game feel "real." Players invest time and effort into earning coins and completing stages. If that progress disappears, they feel cheated and won't come back. Every successful Roblox game saves player data — it's not optional, it's essential.`
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "What is DataStoreService?"
+              },
+              {
+                type: "text",
+                content: "DataStoreService is Roblox's cloud database system. Think of it as a giant filing cabinet in the cloud where each player has their own folder. When they play, you open their folder and read their data. When they leave, you put updated data back in the folder."
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "datastore_concepts.txt",
+                code: "HOW DATASTORES WORK:\n━━━━━━━━━━━━━━━━━━━\n\nDataStore = A named storage area (like a filing cabinet)\n  └── Keys = Individual entries (like folders in the cabinet)\n       └── Values = The actual data (like documents in the folder)\n\nExample:\n  DataStore: \"PlayerData_v1\" (our cabinet)\n    Key: \"Player_12345678\"   (folder for player with userId 12345678)\n    Value: {Coins=150, Stage=5, PlayTime=3600}\n\nKEY OPERATIONS:\n  GetAsync(key)     → Read data from the store\n  SetAsync(key, val) → Write data to the store (overwrites!)\n  UpdateAsync(key, fn) → Read + modify + write atomically\n  RemoveAsync(key)   → Delete data\n\nLIMITS (important!):\n  • 60 + numPlayers×10 requests per minute (per datastore)\n  • Max 4MB per key\n  • Max 50 characters per key name\n  • Keys are global — all servers share the same data!"
               },
               {
                 type: "heading",
@@ -1607,6 +2331,47 @@ Without data saving, all progress is lost when a player leaves. They'd have to r
                 ]
               },
               {
+                type: "heading",
+                level: 2,
+                content: "Auto-Save System"
+              },
+              {
+                type: "text",
+                content: "Relying solely on saving when a player leaves is risky — server crashes can lose data. Implement an auto-save system as a safety net:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "auto_save.lua",
+                code: "-- Add this to your data system script in ServerScriptService\n\nlocal AUTO_SAVE_INTERVAL = 120  -- Save every 2 minutes\n\n-- Auto-save loop\nspawn(function()\n    while true do\n        wait(AUTO_SAVE_INTERVAL)\n        \n        for _, player in ipairs(Players:GetPlayers()) do\n            -- Wrap in pcall for safety\n            local success, err = pcall(function()\n                savePlayerData(player)\n            end)\n            \n            if not success then\n                warn(\"Auto-save failed for \" .. player.Name .. \": \" .. err)\n            end\n        end\n        \n        print(\"💾 Auto-save complete for all players\")\n    end\nend)"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Data Store Retry Logic"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "retry_logic.lua",
+                code: "-- Robust save function with retry logic\nlocal MAX_RETRIES = 3\nlocal RETRY_DELAY = 2  -- seconds between retries\n\nlocal function saveWithRetry(player)\n    local leaderstats = player:FindFirstChild(\"leaderstats\")\n    if not leaderstats then return false end\n    \n    local data = {\n        Coins = leaderstats.Coins.Value,\n        Stage = leaderstats.Stage.Value\n    }\n    \n    for attempt = 1, MAX_RETRIES do\n        local success, err = pcall(function()\n            playerDataStore:SetAsync(\"Player_\" .. player.UserId, data)\n        end)\n        \n        if success then\n            print(\"✅ Saved \" .. player.Name .. \" (attempt \" .. attempt .. \")\")\n            return true\n        else\n            warn(\"❌ Save attempt \" .. attempt .. \" failed: \" .. err)\n            if attempt < MAX_RETRIES then\n                wait(RETRY_DELAY)\n            end\n        end\n    end\n    \n    warn(\"🚨 ALL SAVE ATTEMPTS FAILED for \" .. player.Name)\n    return false\nend"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Saving Complex Data (Inventory)"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "complex_data.lua",
+                code: "-- DataStores can save tables — perfect for inventory systems!\n\nlocal DEFAULT_DATA = {\n    Coins = 0,\n    Stage = 1,\n    PlayTime = 0,\n    Inventory = {},       -- List of owned items\n    Settings = {\n        MusicEnabled = true,\n        SFXVolume = 0.8,\n    },\n}\n\n-- Deep copy function to avoid reference issues\nlocal function deepCopy(original)\n    local copy = {}\n    for k, v in pairs(original) do\n        if type(v) == \"table\" then\n            copy[k] = deepCopy(v)\n        else\n            copy[k] = v\n        end\n    end\n    return copy\nend\n\n-- Load with defaults for missing fields\nlocal function loadPlayerData(player)\n    local success, savedData = pcall(function()\n        return playerDataStore:GetAsync(\"Player_\" .. player.UserId)\n    end)\n    \n    -- Start with a copy of defaults\n    local data = deepCopy(DEFAULT_DATA)\n    \n    -- Merge saved data on top of defaults\n    if success and savedData then\n        for key, value in pairs(savedData) do\n            if type(value) == \"table\" and type(data[key]) == \"table\" then\n                -- Merge nested tables\n                for k2, v2 in pairs(value) do\n                    data[key][k2] = v2\n                end\n            else\n                data[key] = value\n            end\n        end\n    end\n    \n    return data\nend\n\n-- This pattern ensures new players get defaults\n-- AND existing players keep their data even when\n-- you add new fields in updates!"
+              },
+              {
+                type: "tip",
+                content: "Version your DataStore names! Use 'PlayerData_v1', 'PlayerData_v2', etc. If you change the data structure significantly, you can migrate players from the old version to the new one without losing their data."
+              },
+              {
                 type: "checkpoint",
                 content: "Implement data saving for your coin and checkpoint system. Collect some coins, leave the game, rejoin, and verify your coins and stage are still there!"
               }
@@ -1630,7 +2395,9 @@ Without data saving, all progress is lost when a player leaves. They'd have to r
                 type: "text",
                 content: `By the end of this lesson, you'll know how to test thoroughly, add visual polish, implement sound effects, and prepare your game for public release.
 
-The difference between a game people play once and a game they come back to is **polish**. Polish is the sound effects, the particle effects, the smooth animations, the helpful UI, and the dozens of small details that make a game feel complete. A polished game feels like someone cared about every detail — because they did.`
+The difference between a game people play once and a game they come back to is **polish**. Polish is the sound effects, the particle effects, the smooth animations, the helpful UI, and the dozens of small details that make a game feel complete. A polished game feels like someone cared about every detail — because they did.
+
+Professional game studios spend 30-50% of development time on polish alone. It's that important. A game with basic graphics but excellent "game feel" will always outperform a beautiful game that feels clunky. In this lesson, you'll learn the polish techniques that transform your game from amateur to professional.`
               },
               {
                 type: "heading",
@@ -1653,6 +2420,17 @@ The difference between a game people play once and a game they come back to is *
                 language: "lua",
                 filename: "particle_effects.lua",
                 code: "-- Add visual flair to coin collection!\nlocal function createCollectionEffect(position)\n    -- Create a temporary part for the particles\n    local effect = Instance.new(\"Part\")\n    effect.Size = Vector3.new(1, 1, 1)\n    effect.Position = position\n    effect.Anchored = true\n    effect.CanCollide = false\n    effect.Transparency = 1  -- Invisible part\n    effect.Parent = workspace\n    \n    -- Add sparkle particles\n    local particles = Instance.new(\"ParticleEmitter\")\n    particles.Color = ColorSequence.new(Color3.fromRGB(255, 215, 0))  -- Gold\n    particles.Size = NumberSequence.new(0.5, 0)\n    particles.Lifetime = NumberRange.new(0.5, 1)\n    particles.Rate = 50\n    particles.SpreadAngle = Vector2.new(180, 180)\n    particles.Parent = effect\n    \n    -- Emit burst then clean up\n    particles:Emit(20)  -- Burst of 20 particles\n    particles.Enabled = false\n    \n    wait(1.5)\n    effect:Destroy()  -- Clean up\nend"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Background Music System"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "music_system.lua",
+                code: "-- Complete background music system with playlist\n-- Put in ServerScriptService or StarterPlayer\n\nlocal SoundService = game:GetService(\"SoundService\")\n\nlocal playlist = {\n    \"rbxassetid://1234567890\",  -- Song 1 (replace with real IDs)\n    \"rbxassetid://2345678901\",  -- Song 2\n    \"rbxassetid://3456789012\",  -- Song 3\n}\n\nlocal currentSong = 1\n\nlocal music = Instance.new(\"Sound\")\nmusic.Name = \"BackgroundMusic\"\nmusic.Volume = 0.3\nmusic.Looped = false  -- We'll handle looping manually\nmusic.Parent = SoundService\n\nlocal function playNext()\n    music.SoundId = playlist[currentSong]\n    music:Play()\n    \n    currentSong += 1\n    if currentSong > #playlist then\n        currentSong = 1  -- Loop back to first song\n    end\nend\n\n-- When a song ends, play the next one\nmusic.Ended:Connect(playNext)\n\n-- Start the playlist\nplayNext()"
               },
               {
                 type: "heading",
@@ -1694,6 +2472,47 @@ The difference between a game people play once and a game they come back to is *
                   "**Exercise 4:** Set up nice lighting with Atmosphere and Bloom effects.",
                   "**Exercise 5:** Add a loading screen that shows briefly when players join."
                 ]
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Screen Shake Effect"
+              },
+              {
+                type: "text",
+                content: "Screen shake is one of the most impactful polish effects. Use it for explosions, taking damage, or boss attacks:"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "screen_shake.lua",
+                code: "-- LocalScript in StarterPlayerScripts\nlocal camera = workspace.CurrentCamera\n\nlocal function screenShake(intensity, duration)\n    local startTime = tick()\n    \n    while tick() - startTime < duration do\n        local elapsed = tick() - startTime\n        local remaining = 1 - (elapsed / duration)  -- Fade out over time\n        \n        local offsetX = math.random(-100, 100) / 100 * intensity * remaining\n        local offsetY = math.random(-100, 100) / 100 * intensity * remaining\n        \n        camera.CFrame = camera.CFrame * CFrame.new(offsetX, offsetY, 0)\n        \n        wait()  -- One frame\n    end\nend\n\n-- Usage: light shake when hit\nscreenShake(0.5, 0.3)\n\n-- Usage: heavy shake for explosions\nscreenShake(2, 0.5)\n\n-- Usage: earthquake effect\nscreenShake(1.5, 3)"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Tweened UI Animations"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "ui_animations.lua",
+                code: "-- Smooth UI animations using TweenService\nlocal TweenService = game:GetService(\"TweenService\")\n\n-- Slide-in notification from the top\nlocal function showNotification(gui, message, duration)\n    gui.Text = message\n    gui.Position = UDim2.new(0.5, 0, 0, -50)  -- Start above screen\n    gui.Visible = true\n    \n    -- Slide down\n    local slideIn = TweenService:Create(gui, TweenInfo.new(0.3, Enum.EasingStyle.Back), {\n        Position = UDim2.new(0.5, 0, 0, 20)\n    })\n    slideIn:Play()\n    \n    wait(duration or 3)\n    \n    -- Slide back up\n    local slideOut = TweenService:Create(gui, TweenInfo.new(0.2, Enum.EasingStyle.Quad), {\n        Position = UDim2.new(0.5, 0, 0, -50)\n    })\n    slideOut:Play()\n    slideOut.Completed:Wait()\n    gui.Visible = false\nend\n\n-- Bounce effect for collecting items\nlocal function bounceEffect(gui)\n    local originalSize = gui.Size\n    \n    -- Scale up quickly\n    local scaleUp = TweenService:Create(gui, TweenInfo.new(0.1), {\n        Size = UDim2.new(\n            originalSize.X.Scale * 1.3, originalSize.X.Offset,\n            originalSize.Y.Scale * 1.3, originalSize.Y.Offset\n        )\n    })\n    \n    -- Scale back down with bounce\n    local scaleDown = TweenService:Create(\n        gui,\n        TweenInfo.new(0.3, Enum.EasingStyle.Elastic),\n        {Size = originalSize}\n    )\n    \n    scaleUp:Play()\n    scaleUp.Completed:Wait()\n    scaleDown:Play()\nend"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Performance Optimization Tips"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "performance_tips.txt",
+                code: "COMMON PERFORMANCE KILLERS & FIXES:\n\n1. TOO MANY PARTS\n   Problem: Games with 10,000+ parts run slowly\n   Fix: Use MeshParts, combine parts with Union,\n        or use Terrain for landscapes\n\n2. MEMORY LEAKS\n   Problem: Creating objects but never destroying them\n   Fix: Always :Destroy() temporary objects\n        Use Debris:AddItem() for auto-cleanup\n\n3. UNOPTIMIZED LOOPS\n   Problem: GetChildren() every frame\n   Fix: Cache results, only update when needed\n\n4. TOO MANY SCRIPTS\n   Problem: Individual scripts on every part\n   Fix: Use centralized managers (like the coin manager)\n\n5. EXCESSIVE REMOTEEVENTS\n   Problem: Firing events every frame\n   Fix: Batch updates, send only changes, rate limit\n\n6. HIGH-POLY MESHES\n   Problem: Detailed 3D models slow rendering\n   Fix: Keep under 10,000 triangles per mesh\n\nQUICK PERFORMANCE CHECK:\n• Press Ctrl+Shift+F5 for microprofiler\n• Check Settings → Rendering Stats\n• Target: 60 FPS minimum on mid-range devices"
+              },
+              {
+                type: "warning",
+                content: "Test your game on MOBILE before publishing! Many players use phones, and what runs smoothly on your PC might lag on a phone. Reduce part count, simplify effects, and make sure buttons are big enough to tap."
               },
               {
                 type: "checkpoint",
@@ -1774,6 +2593,42 @@ Publishing is the most exciting moment in game development — when your creatio
                 ]
               },
               {
+                type: "heading",
+                level: 2,
+                content: "Monetization — Earning Robux"
+              },
+              {
+                type: "text",
+                content: "Once your game has players, you can earn Robux through game passes and developer products:"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "monetization_guide.txt",
+                code: "GAME PASSES (one-time purchases):\n• VIP pass — special perks, exclusive areas\n• 2x Coins — double coin collection rate\n• Custom Trail — visual effects behind player\n• Extra Lives — more respawn chances\n• Skip Stage — jump ahead in the obby\n\nDEVELOPER PRODUCTS (can buy multiple times):\n• 100 Coins — instant coin boost\n• Extra Life — one additional respawn\n• Speed Boost — temporary speed increase\n\nHOW TO CREATE A GAME PASS:\n1. Go to roblox.com/develop\n2. Click your game → Game Passes\n3. Create a new pass with name, icon, description\n4. Set the price (minimum 1 Robux)\n5. Script the benefits in your game!\n\nROBUX EARNINGS:\n• You receive 70% of Robux spent in your game\n• 100,000 Robux = roughly $350 USD (Developer Exchange)\n• DevEx requirements: 13+ age, 50,000+ earned Robux"
+              },
+              {
+                type: "code",
+                language: "lua",
+                filename: "game_pass_script.lua",
+                code: "-- Script in ServerScriptService to handle Game Pass perks\nlocal MarketplaceService = game:GetService(\"MarketplaceService\")\nlocal Players = game:GetService(\"Players\")\n\nlocal VIP_PASS_ID = 123456789  -- Replace with your Game Pass ID!\nlocal DOUBLE_COINS_PASS_ID = 987654321  -- Another pass\n\nPlayers.PlayerAdded:Connect(function(player)\n    -- Check if player owns VIP pass\n    local hasVIP = false\n    local success, result = pcall(function()\n        return MarketplaceService:UserOwnsGamePassAsync(\n            player.UserId, VIP_PASS_ID\n        )\n    end)\n    \n    if success then\n        hasVIP = result\n    end\n    \n    if hasVIP then\n        print(\"⭐ VIP Player: \" .. player.Name)\n        -- Give VIP perks\n        player.CharacterAdded:Connect(function(char)\n            local humanoid = char:WaitForChild(\"Humanoid\")\n            humanoid.WalkSpeed = 24  -- Faster than normal!\n        end)\n    end\n    \n    -- Check for double coins\n    local hasDouble = false\n    pcall(function()\n        hasDouble = MarketplaceService:UserOwnsGamePassAsync(\n            player.UserId, DOUBLE_COINS_PASS_ID\n        )\n    end)\n    \n    -- Store as attribute for other scripts to check\n    player:SetAttribute(\"DoubleCoins\", hasDouble or false)\nend)"
+              },
+              {
+                type: "tip",
+                content: "Price your game passes wisely! Too expensive and nobody buys them. Too cheap and you don't earn much. Look at popular games in your genre for pricing guidance. A VIP pass usually costs 50-200 Robux, while coin packs cost 25-100 Robux."
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Promoting Your Game"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "promotion_strategies.txt",
+                code: "FREE PROMOTION STRATEGIES:\n━━━━━━━━━━━━━━━━━━━━━━━\n\n1. SOCIAL MEDIA\n   • TikTok: Short gameplay clips (15-30 seconds)\n   • YouTube: Tutorials, updates, trailers\n   • Twitter: Screenshots, development updates\n   • Discord: Create a community server\n\n2. ROBLOX COMMUNITY\n   • Create a Roblox Group for your game\n   • Post on the DevForum (devforum.roblox.com)\n   • Engage in game-related communities\n\n3. CONTENT QUALITY\n   • Professional game icon (this is your AD!)\n   • Compelling description with keywords\n   • Regular updates with changelog\n   • Respond to player feedback\n\n4. PLAYER RETENTION\n   • Daily rewards for returning players\n   • Seasonal events and limited-time content\n   • Achievement/badge system\n   • Regular content updates\n\n5. PAID PROMOTION (when you have Robux)\n   • Roblox Sponsored Experiences\n   • Collaborate with Roblox YouTubers\n   • Cross-promotion with other developers"
+              },
+              {
                 type: "checkpoint",
                 content: "Publish your game to Roblox! Configure the settings, add an icon, and set it to Public. Share the link with at least one person and get their feedback."
               }
@@ -1798,6 +2653,8 @@ Publishing is the most exciting moment in game development — when your creatio
                 content: `**CONGRATULATIONS, DEVELOPER!** 🎉🎮
 
 You did it! You've gone from knowing nothing about game development to having the skills to create, code, and publish real Roblox games. That's an incredible achievement — most people never get past thinking about making a game. You actually DID it.
+
+Think about how far you've come: you learned a real programming language (Lua), understood 3D game architecture, built interactive systems, handled multiplayer networking, and saved player data to the cloud. These aren't just "Roblox skills" — these are real computer science and software engineering concepts that transfer to any programming career.
 
 Let's review everything you've accomplished:`
               },
@@ -1868,10 +2725,73 @@ Let's review everything you've accomplished:`
                 content: "The best way to improve is to BUILD. Pick one game idea from the list above and start making it today. You'll encounter new challenges that force you to learn new skills. That's the fastest path to becoming a great developer!"
               },
               {
+                type: "heading",
+                level: 2,
+                content: "Final Capstone Project"
+              },
+              {
+                type: "text",
+                content: "Put everything together with this comprehensive capstone project. Build a complete mini-game that showcases every skill you've learned:"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "capstone_project.txt",
+                code: "CAPSTONE PROJECT: 'Coin Rush' — Complete Mini Game\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nBuild a timed coin-collection game with these features:\n\n1. WORLD DESIGN (Chapter 1)\n   □ Build an arena with platforms at different heights\n   □ Use different materials for visual variety\n   □ Add terrain around the edges\n   □ Create an attractive spawn area\n\n2. GAME SYSTEMS (Chapters 2-4)\n   □ Leaderstats with Coins and HighScore\n   □ 20+ coins scattered around the map\n   □ 3 coin tiers: Bronze (1pt), Silver (5pt), Gold (25pt)\n   □ 60-second countdown timer per round\n   □ Kill zones (lava, void) that reset position\n   □ Moving platforms to reach higher coins\n\n3. USER INTERFACE (Chapter 5)\n   □ Timer display (top center)\n   □ Current score display (top left)\n   □ High score display (top right)\n   □ 'Game Over' screen with final score\n   □ 'Play Again' button\n   □ Start menu with title and instructions\n\n4. MULTIPLAYER (Chapter 6)\n   □ Works for multiple players simultaneously\n   □ Each player has their own score\n   □ Announce when someone gets a new high score\n   □ Use RemoteEvents for start/end game signals\n\n5. DATA PERSISTENCE (Chapter 6)\n   □ Save each player's all-time high score\n   □ Load it when they rejoin\n   □ Display personal best on the HUD\n\n6. POLISH (Chapter 7)\n   □ Particle effects on coin collection\n   □ Sound effects (collect, timer warning, game over)\n   □ Atmosphere and lighting\n   □ Screen shake when timer hits 10 seconds\n   □ Professional game icon and description\n   □ Published and playable!\n\nESTIMATED TIME: 4-8 hours\nDIFFICULTY: Uses everything from this course!"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Game Design Principles"
+              },
+              {
+                type: "text",
+                content: "Before you build your next game, internalize these game design principles that professionals follow:"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "design_principles.txt",
+                code: "🎮 10 GAME DESIGN PRINCIPLES:\n\n1. THE 30-SECOND RULE\n   Players decide in 30 seconds if they'll keep playing.\n   Make the opening IMMEDIATELY fun and clear.\n\n2. TEACH BY DOING\n   Don't show long text tutorials. Design levels that\n   teach mechanics naturally through gameplay.\n\n3. REWARD FREQUENTLY\n   Give players small wins often: coins, sounds, effects.\n   Long gaps between rewards = boredom.\n\n4. DIFFICULTY CURVE\n   Easy → Medium → Hard. Never spike difficulty suddenly.\n   Each challenge should build on what players already know.\n\n5. JUICE IT\n   Add feedback to EVERYTHING: sounds on clicks, particles\n   on collections, screen shake on impacts. 'Juice' makes\n   simple actions feel satisfying.\n\n6. LESS IS MORE\n   A game with 3 polished features beats a game with\n   20 broken features. Finish what you start.\n\n7. PLAYTEST CONSTANTLY\n   You know your game too well to judge it fairly.\n   Watch OTHER people play. Where do they get confused?\n\n8. FAIL FAST, LEARN FAST\n   Build a rough prototype in 1 day. Test it.\n   If it's not fun, change the core mechanic or move on.\n\n9. COPY, THEN INNOVATE\n   Study games you love. Understand WHY they're fun.\n   Clone them first, then add your unique twist.\n\n10. SHIP IT\n    A finished, published game teaches you more than\n    10 unfinished projects. Done > Perfect."
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Recommended Resources"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "resources.txt",
+                code: "OFFICIAL RESOURCES:\n━━━━━━━━━━━━━━━━━\n• Roblox Creator Documentation: create.roblox.com/docs\n• Roblox DevForum: devforum.roblox.com\n• Roblox Education: education.roblox.com\n• API Reference: create.roblox.com/docs/reference\n\nYOUTUBE CHANNELS:\n━━━━━━━━━━━━━━━━━\n• AlvinBlox — Beginner-friendly Roblox tutorials\n• TheDevKing — Comprehensive scripting tutorials\n• PeasFactory — Game design and advanced scripts\n• GnomeCode — Clean coding practices\n\nCOMMUNITY:\n━━━━━━━━━━━\n• Roblox Developer Discord servers\n• Hidden Developers community\n• r/robloxgamedev on Reddit\n\nTOOLS:\n━━━━━━\n• Rojo — Sync external code editors with Studio\n• Moon Animator — Advanced animation plugin\n• Blender — Free 3D modeling (for custom meshes)\n• VS Code — External code editor with Lua extensions"
+              },
+              {
+                type: "heading",
+                level: 2,
+                content: "Your Development Roadmap"
+              },
+              {
+                type: "code",
+                language: "text",
+                filename: "roadmap.txt",
+                code: "YOUR NEXT 30 DAYS:\n━━━━━━━━━━━━━━━━━━\n\nWeek 1: Polish Your First Game\n  □ Fix all bugs from testing\n  □ Add sound effects to every interaction\n  □ Create a professional game icon\n  □ Publish and get 5 friends to play\n\nWeek 2: Build a New Game\n  □ Pick a genre (obby, tycoon, simulator)\n  □ Plan 5 core features on paper\n  □ Build the basic gameplay loop\n  □ Test with at least 3 people\n\nWeek 3: Learn Advanced Topics\n  □ Study TweenService for smooth animations\n  □ Learn ModuleScripts for code organization\n  □ Try NPC pathfinding (PathfindingService)\n  □ Experiment with Terrain tools\n\nWeek 4: Launch & Grow\n  □ Add monetization (game passes)\n  □ Create a Roblox Group\n  □ Post gameplay clips on social media\n  □ Plan your next update based on feedback"
+              },
+              {
                 type: "text",
                 content: `You started this course knowing nothing about game development. Now you can create real, playable, multiplayer games that millions of people could enjoy. That's an incredible skill to have at any age.
 
-The Roblox community is waiting for your next creation. Keep building, keep learning, keep creating. The only limit is your imagination. 🚀🎮✨`
+**Remember:** Every professional Roblox developer started exactly where you are now. The difference between those who succeed and those who don't isn't talent — it's persistence. Keep building, keep learning from mistakes, keep shipping games. Your first game won't be perfect, and that's okay. Your tenth game will be amazing.
+
+The Roblox community is waiting for your next creation. You have the skills, the tools, and the platform. Now go make something incredible! 🚀🎮✨
+
+**Real-World Career Paths from Roblox Development:**
+The skills you've learned here open real career doors. Lua programming transfers to game development. UI design transfers to web and app development. Client-server architecture transfers to backend engineering. Data persistence transfers to database management. Many professional developers started exactly where you are now — building games for fun that turned into real skills and real careers.
+
+Whether you become a full-time game developer, use these skills as a side hustle earning Robux, or simply enjoy the creative outlet of building games — you've gained something valuable that can never be taken away: the ability to create.
+
+**One final challenge:** Before you close this course, open Roblox Studio and start building something new. Right now. Don't plan it, don't overthink it — just create. The best developers are the ones who never stop building.
+
+Thank you for completing this course. Now go make games! 🎮🚀`
               }
             ]
           }
